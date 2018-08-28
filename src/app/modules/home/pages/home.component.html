@@ -1,0 +1,7 @@
+<div id="content">
+    <ul>
+        <li *ngFor="let project of projects$ | async">
+            {{ project | json }}
+        </li>
+    </ul>
+</div>
