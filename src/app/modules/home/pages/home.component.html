@@ -1,4 +1,5 @@
 <div id="content">
+    <button class="btn btn-primary" (click)="openMyModal()">Open Modal</button>
     <ul>
         <li *ngFor="let project of projects$ | async">
             {{ project | json }}

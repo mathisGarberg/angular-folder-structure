@@ -29,11 +29,11 @@ export class HomeComponent implements OnInit {
     }
 
     openMyModal() {
-        // this.modalService.open(MyModalComponent, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-        //   this.closeResult = `Closed with: ${result}`;
-        // }, (reason) => {
-        //   this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
-        // });
+        const modalRef = this.modalService.open(MyModalComponent);
+        modalRef.componentInstance.id = 1;
+        modalRef.result.then((result) => {
+            console.log(result);
+        });
     }
 
 }
