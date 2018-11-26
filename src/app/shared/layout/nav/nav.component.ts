@@ -8,10 +8,10 @@ import { environment } from '@env/environment';
     styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-    
-    version = environment.version;
-    
-    constructor() { }
 
-    ngOnInit(): void { }
+  version = environment.version;
+
+  constructor() { }
+
+  ngOnInit(): void { }
 }

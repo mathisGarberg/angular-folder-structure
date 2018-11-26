@@ -8,10 +8,12 @@ import { HomeModule } from './modules/home/home.module';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContentLayoutComponent } from './layouts/content-layout/content-layout.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ContentLayoutComponent
   ],
   imports: [
     // angular
