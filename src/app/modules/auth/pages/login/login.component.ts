@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { tap, delay, finalize } from 'rxjs/operators';
+import { tap, delay, finalize, catchError } from 'rxjs/operators';
+import { of } from 'rxjs';
 
 import { AuthService } from '@app/core';
 
@@ -39,9 +40,8 @@ export class LoginComponent implements OnInit {
       .pipe(
         delay(5000),
         tap(user => this.router.navigate(['/dashboard/home'])),
-        finalize(() => {
-          this.isLoading = false;
-        })
+        finalize(() => this.isLoading = false),
+        catchError(error => of(this.error = error))
       ).subscribe();
   }
 

@@ -3,6 +3,10 @@
   Password: 12345
 </div>
 
+<div [hidden]="!error" class="alert alert-danger">
+  {{ error }}
+</div>
+
 <form (ngSubmit)="login()" [formGroup]="loginForm">
     <div class="form-group">
       <label class="d-block">
@@ -14,7 +18,7 @@
         <app-control-messages [control]="f['password']"></app-control-messages>
       </label>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block btn-raised" type="submit">
+        <button type="submit" class="btn btn-primary btn-block btn-raised" type="submit" [disabled]="loginForm.invalid">
           <span [hidden]="isLoading">Submit</span>
           <span [hidden]="!isLoading"><i class="fas fa-asterisk fa-2x fa-spin"></i></span>
         </button>
