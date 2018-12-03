@@ -4,8 +4,15 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home', component: HomeComponent }
+    {
+      path: '',
+      children: [
+        {
+          path: 'home',
+          component: HomeComponent
+        }
+      ]
+    },
 ];
 
 @NgModule({

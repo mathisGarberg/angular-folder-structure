@@ -4,9 +4,11 @@ import { JsonApiService } from './json-api.service';
 
 const routes = {
     users: '/users'
-}
+};
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class UserService {
 
     constructor(private jsonApiService: JsonApiService) {}

@@ -7,9 +7,11 @@ import { Project } from '../models/project.model';
 
 const routes = {
     projects: '/projects.json'
-}
+};
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ProjectService {
 
     constructor(private jsonApiService: JsonApiService) {}

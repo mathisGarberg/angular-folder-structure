@@ -1,0 +1,26 @@
+<div class="alert alert-info" role="alert">
+  Username: Mathis \\
+  Password: 12345
+</div>
+
+<form (ngSubmit)="login()" [formGroup]="loginForm">
+  <div class="form-group">
+    <label class="d-block">
+      <input type="text" class="form-control" [placeholder]="'Username'" formControlName="username">
+      <app-control-messages [control]="f['username']"></app-control-messages>
+    </label>
+    <label class="d-block">
+      <input type="password" class="form-control" [placeholder]="'Password'" formControlName="password">
+      <app-control-messages [control]="f['password']"></app-control-messages>
+    </label>
+    <div class="form-group">
+      <button type="submit" class="btn btn-primary btn-block btn-raised" type="submit">
+        <span [hidden]="isLoading">Submit</span>
+        <span [hidden]="!isLoading"><i class="fas fa-asterisk fa-2x fa-spin"></i></span>
+      </button>
+      <button type="button" class="btn btn-secondary btn-block btn-raised">Cancel</button>
+    </div>
+
+    <a [routerLink]="['/auth/register']">Don't have an account? Sign up here!</a>
+  </div>
+</form>

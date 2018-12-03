@@ -1,0 +1,28 @@
+.full-width-image {
+  min-height: 100vh;
+  width: 100vw;
+  background: url("../../../assets/images/mountain.png") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.auth-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.auth-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+}
+
+.card {
+  background-color: #2a2a2a;
+  color: #FFF;
+}

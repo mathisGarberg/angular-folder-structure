@@ -9,8 +9,6 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
 
 import { throwIfAlreadyLoaded } from './guards/module-import.guard';
 
-import { services } from './services';
-
 @NgModule({
     imports: [
         HttpClientModule
@@ -18,8 +16,6 @@ import { services } from './services';
     providers: [
         AuthGuard,
         NoAuthGuard,
-
-        ...services,
 
         {
             provide: HTTP_INTERCEPTORS,

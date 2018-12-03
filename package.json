@@ -7,7 +7,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "json:server": "json-server --watch mocks/data.json"
   },
   "private": true,
   "dependencies": {
@@ -23,17 +24,17 @@
     "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
     "@ng-bootstrap/ng-bootstrap": "^3.0.0",
     "bootstrap": "^4.1.1",
-    "hammerjs": "^2.0.8",
     "core-js": "^2.5.4",
+    "hammerjs": "^2.0.8",
+    "json-server": "^0.14.0",
     "rxjs": "^6.0.0",
     "rxjs-compat": "^6.2.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "^6.0.3",
     "@angular-devkit/build-angular": "~0.6.8",
-    "typescript": "~2.7.2",
-    "@angular/cli": "~6.0.8",
+    "@angular/cli": "^7.1.0",
+    "@angular/compiler-cli": "^6.0.3",
     "@angular/language-service": "^6.0.3",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
@@ -48,6 +49,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1"
+    "tslint": "~5.9.1",
+    "typescript": "~2.7.2"
   }
 }

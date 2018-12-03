@@ -7,6 +7,9 @@ import { LayoutModule } from './layout/layout.module';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
+import { ControlMessagesComponent } from './components/control-messages/control-messages.component';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -18,16 +21,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
         NgbModule.forRoot()
     ],
-    declarations: [],
+    declarations: [
+      ControlMessagesComponent,
+      SpinnerComponent
+    ],
     exports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
-        RouterModule,
+      CommonModule,
+      FormsModule,
+      ReactiveFormsModule,
+      RouterModule,
 
-        LayoutModule,
+      LayoutModule,
 
-        NgbModule
+      NgbModule,
+
+      ControlMessagesComponent,
+      SpinnerComponent
     ]
 })
 export class SharedModule { }

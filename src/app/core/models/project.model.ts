@@ -1,4 +1,4 @@
 export class Project {
-    href: string;
+    link: string;
     title: string;
 }
