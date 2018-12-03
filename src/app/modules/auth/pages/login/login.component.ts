@@ -39,7 +39,9 @@ export class LoginComponent implements OnInit {
       .pipe(
         delay(5000),
         tap(user => this.router.navigate(['/dashboard/home'])),
-        finalize(() => this.isLoading = false)
+        finalize(() => {
+          this.isLoading = false;
+        })
       ).subscribe();
   }
 

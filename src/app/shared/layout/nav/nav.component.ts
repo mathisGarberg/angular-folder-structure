@@ -11,7 +11,7 @@ export class NavComponent implements OnInit {
   version = environment.version;
 
   navItems = [
-    { link: '/home', title: 'Home' },
+    { link: '/dashboard/home', title: 'Home' },
     { link: '/about', title: 'About' },
     { link: '/contact', title: 'Contact' }
   ];

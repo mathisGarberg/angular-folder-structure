@@ -5,13 +5,16 @@ import { environment } from '@env/environment';
 import { AuthGuard } from './guards/auth.guard';
 import { NoAuthGuard } from './guards/no-auth.guard';
 
+import { NgxSpinnerModule } from 'ngx-spinner';
+
 import { TokenInterceptor } from './interceptors/token.interceptor';
 
 import { throwIfAlreadyLoaded } from './guards/module-import.guard';
 
 @NgModule({
     imports: [
-        HttpClientModule
+        HttpClientModule,
+        NgxSpinnerModule
     ],
     providers: [
         AuthGuard,
