@@ -11,7 +11,7 @@ import { NoAuthGuard } from '@app/core';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'dashboard/home',
+    redirectTo: '/auth/login',
     pathMatch: 'full'
   },
   {
@@ -26,7 +26,7 @@ const routes: Routes = [
     loadChildren: './modules/auth/auth.module#AuthModule'
   },
   // Fallback when no prior routes is matched
-  { path: '**', redirectTo: '/dashboard/home', pathMatch: 'full' }
+  { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }
 ];
 
 @NgModule({
