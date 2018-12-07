@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-auth-layout',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./auth-layout.component.css']
 })
 export class AuthLayoutComponent implements OnInit {
+
+  faUserCircle = faUserCircle;
 
   constructor() { }
 

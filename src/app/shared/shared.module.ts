@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 import { LayoutModule } from './layout/layout.module';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { ControlMessagesComponent } from './components/control-messages/control-messages.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
@@ -34,6 +35,7 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
       LayoutModule,
 
       NgbModule,
+      FontAwesomeModule,
 
       ControlMessagesComponent,
       SpinnerComponent
