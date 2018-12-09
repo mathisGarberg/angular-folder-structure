@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --proxy-config proxy.conf.js",
+    "json:server": "json-server --watch mocks/data.json",
+    "start": "ng serve --proxy-config proxy.conf.json",
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "json:server": "json-server --watch mocks/data.json"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
