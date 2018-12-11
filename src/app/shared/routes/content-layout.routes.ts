@@ -8,5 +8,9 @@ export const CONTENT_ROUTES: Routes = [
   {
     path: 'about',
     loadChildren: './modules/about/about.module#AboutModule'
+  },
+  {
+    path: 'contact',
+    loadChildren: './modules/contact/contact.module#ContactModule'
   }
 ];
