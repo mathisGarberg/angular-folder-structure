@@ -1,8 +1,10 @@
 <div id="content">
     <button class="btn btn-primary" (click)="openMyModal()">Open Modal</button>
-    <ul>
-        <li *ngFor="let project of projects$ | async">
-            {{ project | json }}
-        </li>
-    </ul>
+    <h1>Projects</h1>
+
+    <ngx-masonry [useImagesLoaded]="true" [options]="{ transitionDuration: '0.8s' }">
+      <ngxMasonryItem class="masonry-item" *ngFor="let project of projects$ | async">
+        <app-project-item [project]="project"></app-project-item>
+      </ngxMasonryItem>
+    </ngx-masonry>
 </div>

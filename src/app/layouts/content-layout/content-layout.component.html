@@ -1,5 +1,11 @@
-<app-nav></app-nav>
-<div class="container">
-  <router-outlet></router-outlet>
+<div [class]="theme">
+  <div class="mat-app-background">
+    <app-nav></app-nav>
+
+      <div class="container">
+        <router-outlet></router-outlet>
+      </div>
+
+    <app-footer (changeTheme)="onThemeChange($event)"></app-footer>
+  </div>
 </div>
-<app-footer></app-footer>

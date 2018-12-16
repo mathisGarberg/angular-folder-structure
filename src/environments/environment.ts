@@ -9,6 +9,7 @@ export const environment = {
   production: false,
   version: env.npm_package_version + '-dev',
   serverUrl: '/api',
+  envName: 'DEV',
 };
 
 /*

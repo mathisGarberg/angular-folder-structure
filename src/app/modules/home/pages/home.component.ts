@@ -14,7 +14,7 @@ import { MyModalComponent } from '../modals/my-modal.component';
 export class HomeComponent implements OnInit {
 
     projects$: Observable<Project[]>;
-    
+
     constructor(
         private modalService: NgbModal,
         private projectService: ProjectService
@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
     ngOnInit(): void {
         this.loadProjects();
     }
-    
+
     loadProjects() {
         this.projects$ = this.projectService.getAll();
     }
