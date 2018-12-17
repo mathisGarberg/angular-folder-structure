@@ -7,7 +7,8 @@ import { Project } from '../models/project.model';
 import { ApiService } from './api.service';
 
 const routes = {
-    projects: '/projects'
+    projects: '/projects',
+    project: (id: number) =>  `/projects/${id}`
 };
 
 @Injectable({
@@ -21,6 +22,10 @@ export class ProjectService {
 
     getAll(): Observable<Project[]> {
         return this.apiService.get(routes.projects);
+    }
+
+    getSingle(id: number): Observable<Project> {
+        return this.apiService.get(routes.project(id));
     }
 
 }
