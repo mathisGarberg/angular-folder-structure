@@ -1,0 +1,9 @@
+$my-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$my-black-accent: mat-palette($mat-blue-grey, 400);
+$my-black-warn: mat-palette($mat-red, 500);
+
+$my-black-theme: mat-dark-theme(
+  $my-black-primary,
+  $my-black-accent,
+  $my-black-warn
+);

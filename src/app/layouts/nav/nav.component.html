@@ -1,0 +1,20 @@
+<div class="wrapper">
+  <div class="toolbar">
+    <mat-toolbar color="primary">
+      <div class="container">
+        <span routerLink="" class="branding spacer center d-none d-sm-inline d-md-none">
+          {{ 'Angular Folder Structure' }}
+        </span>
+        <span routerLink="" class="branding spacer d-none d-md-inline">
+          {{ 'Angular Folder Structure' }}
+        </span>
+        <span class="d-none d-md-inline">
+          <button mat-button class="nav-button" *ngFor="let item of navItems" [routerLink]="[item.link]"
+            routerLinkActive="active">
+            {{ item.title }}
+          </button>
+        </span>
+      </div>
+    </mat-toolbar>
+  </div>
+</div>

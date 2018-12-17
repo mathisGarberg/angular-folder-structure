@@ -10,6 +10,7 @@ import { environment } from '@env/environment';
 export class NavComponent implements OnInit {
   version = environment.version;
 
+
   navItems = [
     { link: '/dashboard/home', title: 'Home' },
     { link: '/about', title: 'About' },
@@ -18,5 +19,9 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void { }
+  ngOnInit() {
+
+  }
+
+
 }

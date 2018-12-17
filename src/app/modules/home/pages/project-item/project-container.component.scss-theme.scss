@@ -1,0 +1,15 @@
+@import '~@angular/material/theming';
+
+@mixin my-project-container-component-theme($theme) {
+  $accent: map-get($theme, accent);
+
+  .active {
+    color: mat-color($accent, default-contrast);
+    background-color: mat-color($accent);
+
+    &:hover {
+      color: mat-color($accent, default-contrast);
+      background-color: mat-color($accent);
+    }
+  }
+}
