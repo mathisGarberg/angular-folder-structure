@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,16 +18,20 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
-    "baseUrl": "src",
     "paths": {
       "@app/*": ["app/*"],
-      "@env/*": ["environments/*"]
-    }
+      "@env/*": [
+        "environments/*"
+      ],
+      "@testing/*": [
+        "testing/*"
+      ]
+    },
   },
+  "lib": [
+    "es2017",
+    "dom"
+  ],
   "angularCompilerOptions": {
     "preserveWhitespaces": false
   }

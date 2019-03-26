@@ -9,6 +9,7 @@ Before serving the project, you need to have Node version 8.9 and npm 5.5.1 or h
 If you already have Node and npm installed, verify their version by running:
 
 ````
+
 $ node -v # => displays the node version
 $ npm -v # => displays npm version
 ````
