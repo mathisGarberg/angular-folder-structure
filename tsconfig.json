@@ -10,7 +10,7 @@
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es5",
+    "target": "es6",
     "types": [
       "hammerjs",
       "jasmine"
