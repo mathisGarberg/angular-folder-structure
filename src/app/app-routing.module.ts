@@ -23,15 +23,16 @@ const routes: Routes = [
   {
     path: 'auth',
     component: AuthLayoutComponent,
-    loadChildren: './modules/auth/auth.module#AuthModule'
+    loadChildren: () =>
+      import('./modules/auth/auth.module').then(m => m.AuthModule)
   },
   // Fallback when no prior routes is matched
   { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {useHash: true})],
-    exports: [RouterModule],
-    providers: []
+  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  exports: [RouterModule],
+  providers: []
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

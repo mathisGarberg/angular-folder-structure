@@ -3,14 +3,17 @@ import { Routes } from '@angular/router';
 export const CONTENT_ROUTES: Routes = [
   {
     path: 'dashboard',
-    loadChildren: './modules/home/home.module#HomeModule'
+    loadChildren: () =>
+      import('./modules/home/home.module').then(m => m.HomeModule)
   },
   {
     path: 'about',
-    loadChildren: './modules/about/about.module#AboutModule'
+    loadChildren: () =>
+      import('./modules/about/about.module').then(m => m.AboutModule)
   },
   {
     path: 'contact',
-    loadChildren: './modules/contact/contact.module#ContactModule'
+    loadChildren: () =>
+      import('./modules/contact/contact.module').then(m => m.ContactModule)
   }
 ];

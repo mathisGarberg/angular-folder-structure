@@ -2,6 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./src",
+    "module": "esnext",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -10,7 +11,7 @@
     "experimentalDecorators": true,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es6",
+    "target": "es2015",
     "types": [
       "hammerjs",
       "jasmine"
