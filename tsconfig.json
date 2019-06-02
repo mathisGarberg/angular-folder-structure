@@ -9,13 +9,7 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "suppressImplicitAnyIndexErrors": true,
     "target": "es5",
-    "types": [
-      "hammerjs",
-      "jasmine"
-    ],
     "typeRoots": [
       "node_modules/@types"
     ],
@@ -28,12 +22,9 @@
         "testing/*"
       ]
     },
-  },
-  "lib": [
-    "es2017",
-    "dom"
-  ],
-  "angularCompilerOptions": {
-    "preserveWhitespaces": false
+    "lib": [
+      "es2017",
+      "dom"
+    ]
   }
 }
