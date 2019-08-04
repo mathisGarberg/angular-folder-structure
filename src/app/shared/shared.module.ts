@@ -64,38 +64,34 @@ library.add(
   faBook
 );
 
-
 import { ControlMessagesComponent } from './components/control-messages/control-messages.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        FormsModule,
-        ReactiveFormsModule,
-        RouterModule,
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
 
-        NgbModule.forRoot(),
-        FontAwesomeModule
-    ],
-    declarations: [
-      ControlMessagesComponent,
-      SpinnerComponent
-    ],
-    exports: [
-      CommonModule,
-      FormsModule,
-      ReactiveFormsModule,
-      RouterModule,
+    NgbModule,
+    FontAwesomeModule
+  ],
+  declarations: [ControlMessagesComponent, SpinnerComponent],
+  exports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
 
-      MaterialModule,
+    MaterialModule,
 
-      NgbModule,
-      FontAwesomeModule,
-      NgxMasonryModule,
+    NgbModule,
+    FontAwesomeModule,
+    NgxMasonryModule,
 
-      ControlMessagesComponent,
-      SpinnerComponent
-    ]
+    ControlMessagesComponent,
+    SpinnerComponent
+  ]
 })
-export class SharedModule { }
+export class SharedModule {}
