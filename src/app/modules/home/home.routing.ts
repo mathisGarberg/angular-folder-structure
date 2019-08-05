@@ -5,22 +5,22 @@ import { HomeComponent } from './pages/home.component';
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 
 export const routes: Routes = [
-    {
-      path: '',
-      children: [
-        {
-          path: 'home',
-          component: HomeComponent
-        },
-        {
-          path: 'projects/:id',
-          component: ProjectDetailsComponent,
-          resolve: {
-            project: ProjectResolver
-          }
+  {
+    path: '',
+    children: [
+      {
+        path: 'home',
+        component: HomeComponent
+      },
+      {
+        path: 'projects/:id',
+        component: ProjectDetailsComponent,
+        resolve: {
+          project: ProjectResolver
         }
-      ]
-    },
+      }
+    ]
+  }
 ];
 
 @NgModule({
