@@ -5,12 +5,14 @@ The data module is a top level directory and holds the schema (models/entities) 
 for data consumed by the application.
 
 By default there are two subdirectories::
-  
+
   ~/src/app/data
     /schema
     /service 
 
-The schema directory holds the class definition files for data structures.  An example data structure::
+The schema directory holds the class definition files for data structures.  An example data structure:
+
+.. code-block:: ts
 
   export class Project {
     link: string;
@@ -20,6 +22,8 @@ The schema directory holds the class definition files for data structures.  An e
 
 The service directory holds the services for fetching data.  The service files are not necessarily 
 a 1:1 match with schema files.  An example service file:
+
+.. code-block:: ts
 
   import { Injectable } from '@angular/core';
   import { Observable } from 'rxjs';
@@ -53,7 +57,7 @@ Multiple Data Sources
 ---------------------
 
 If your application consumes data from more than one source then the data directory should be restructured
-to contain subdirectories for each data source::
+to contain subdirectories for each data source.  Do not create multiple modules for each data source::
 
   ~/src/app/data
     /data-source-one
@@ -62,3 +66,13 @@ to contain subdirectories for each data source::
     /data-source-two
       /schema
       /service
+    /data.module.ts
+
+
+Schema Naming Standard
+----------------------
+
+A schema file is very much like an entity file in an Object Relational Mapper.  This schema file is central
+to your application's consumption of data and therefore does not need cursory decorators such as calling it
+`ProjectSchema` or `ProjectModel`.  Schemas are special because they are the only plain-named class in the 
+application.
