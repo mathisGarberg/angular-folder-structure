@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
 import { delay, map, catchError } from 'rxjs/operators';
 
 import { config } from '../app-config';
@@ -9,26 +9,27 @@ import { config } from '../app-config';
   providedIn: 'root'
 })
 export class JsonApiService {
+  constructor(private httpClient: HttpClient) {}
 
-    constructor(private httpClient: HttpClient) { }
+  fetch(url): Observable<any> {
+    return this.httpClient.get(this.getBaseUrl() + config.API_URL + url).pipe(
+      delay(100),
+      catchError(this.handleError)
+    );
+  }
 
-    fetch(url): Observable<any> {
-        return this.httpClient.get(this.getBaseUrl() +  config.API_URL + url)
-            .pipe(
-                delay(100),
-                catchError(this.handleError)
-            );
-    }
+  private getBaseUrl() {
+    return `${location.protocol}//${location.hostname +
+      (location.port ? ':' + location.port : '')}/`;
+  }
 
-    private getBaseUrl() {
-        return `${location.protocol}//${location.hostname + (location.port ? ':' + location.port : '')}/`;
-    }
+  private handleError(error: any) {
+    const errorMsg = error.message
+      ? error.message
+      : error.status
+      ? `${error.status} - ${error.statusText}`
+      : 'Server error';
 
-    private handleError(error: any) {
-        const errorMsg = (error.message) ? error.message :
-            error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-
-        return Observable.throw(errorMsg);
-    }
-
+    return throwError(errorMsg);
+  }
 }
