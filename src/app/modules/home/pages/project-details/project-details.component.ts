@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { Project } from '@app/core';
+import { Project } from '../../../../data/schema/project';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of, Observable, throwError } from 'rxjs';
 
-import { User } from '../../core/models/user.model';
+import { User } from '../../data/schema/user';
 
 export class ILoginContext {
   username: string;

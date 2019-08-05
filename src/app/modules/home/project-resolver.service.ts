@@ -3,7 +3,8 @@ import { ActivatedRouteSnapshot, Resolve, Router, RouterStateSnapshot } from '@a
 import { Observable } from 'rxjs';
 import { catchError } from 'rxjs/operators';
 
-import { Project, ProjectService } from '@app/core';
+import { Project } from '../../data/schema/project';
+import { ProjectService } from '../../data/service/project.service';
 
 @Injectable({
   providedIn: 'root'
