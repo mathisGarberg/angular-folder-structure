@@ -10,7 +10,6 @@ export const environment = {
   version: env.npm_package_version + '-dev',
   serverUrl: '/api',
   envName: 'DEV',
-  API_URL: 'assets/api'
 };
 
 /*
