@@ -1,4 +1,4 @@
-`<< Back to Index <index.rst>`_
+`<< Documentation Index <index.rst>`_
 
 
 Data Module

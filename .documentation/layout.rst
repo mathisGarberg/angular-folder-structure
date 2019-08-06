@@ -1,3 +1,5 @@
+`<< Documentation Index <index.rst>`_
+
 Layout Directory
 ================
 
