@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
-import { delay, catchError } from 'rxjs/operators';
+import { delay, map, catchError } from 'rxjs/operators';
 
-import { environment } from '../../../environments/environment';
+import { config } from '../app-config';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class JsonApiService {
   constructor(private httpClient: HttpClient) {}
 
   fetch(url): Observable<any> {
-    return this.httpClient.get(this.getBaseUrl() + environment.API_URL + url).pipe(
+    return this.httpClient.get(this.getBaseUrl() + config.API_URL + url).pipe(
       delay(100),
       catchError(this.handleError)
     );
