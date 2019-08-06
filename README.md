@@ -6,6 +6,12 @@ The project is inspired by the article on Medium called [How to define a highly 
 ![login screen screenshot](https://i.imgur.com/J1B3I02.jpg)
 
 
+Documentation
+-------------
+
+Please [read the documentation](.documentation/index.rst) for details on each part of the directory structure.
+
+
 Install
 -------
 
@@ -20,7 +26,7 @@ After cloneing locally and `cd` to the project directory, install the node libra
 ```
 
 
-Json Server
+JSON Server
 -----------
 
 A JSON Server will run the backend for this project. To run this application you will need to launch the JSON Server to interact with the different API endpoint.
@@ -39,10 +45,11 @@ Run `npm run start` for a dev server. The project will serve with the proxy a pr
 
 Scripts
 -------
-npm start -> Run dev. server on http://localhost:4200/
-npm run build -> Lint code and build app for production in dist folder
-npm run test -> Run unit tests via Karma in watch mode
-npm test:ci ->	Lint code and run unit tests once for continuous integration
-npm run e2e ->	Run e2e tests using Protractor
-npm run lint -> Lint code
+
+* npm start -> Run dev. server on http://localhost:4200/
+* npm run build -> Lint code and build app for production in dist folder
+* npm run test -> Run unit tests via Karma in watch mode
+* npm test:ci ->	Lint code and run unit tests once for continuous integration
+* npm run e2e ->	Run e2e tests using Protractor
+* npm run lint -> Lint code
 
