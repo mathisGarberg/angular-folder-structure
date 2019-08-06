@@ -5,7 +5,7 @@ This project is an example of directory structure in an Angular application but 
 
 Here we cover the parts of the application directory structure and the function of each:
 
-* `~/src/main.scss <theme.rst>`_
+* `~/src/theme <theme.rst>`_
 * `~/src/app/core <core.rst>`_
 * `~/src/app/data <data.rst>`_
 * `~/src/app/layout <layout.rst>`_
