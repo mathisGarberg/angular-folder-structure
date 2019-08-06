@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 
-import { MyModalComponent } from './modals/my-modal.component';
+import { MyModalComponent } from './modal/my-modal.component';
 
-import { HomeComponent } from './pages/home.component';
+import { HomeComponent } from './page/home.component';
 import { HomeRoutingModule } from './home.routing';
 
-import { SharedModule } from '@app/shared';
-import { ProjectItemComponent } from './pages/project-item/project-item.component';
-import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
+import { SharedModule } from '../../shared/shared.module';
+import { ProjectItemComponent } from './page/project-item/project-item.component';
+import { ProjectDetailsComponent } from './page/project-details/project-details.component';
 
 @NgModule({
     declarations: [

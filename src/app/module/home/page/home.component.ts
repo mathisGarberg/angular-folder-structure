@@ -5,7 +5,7 @@ import { ProjectService } from '../../../data/service/project.service';
 import { Project } from '../../../data/schema/project';
 import { Observable } from 'rxjs';
 
-import { MyModalComponent } from '../modals/my-modal.component';
+import { MyModalComponent } from '../modal/my-modal.component';
 
 @Component({
     selector: 'app-home',

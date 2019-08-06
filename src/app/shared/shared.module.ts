@@ -64,8 +64,8 @@ library.add(
   faBook
 );
 
-import { ControlMessagesComponent } from './components/control-messages/control-messages.component';
-import { SpinnerComponent } from './components/spinner/spinner.component';
+import { ControlMessagesComponent } from './component/control-messages/control-messages.component';
+import { SpinnerComponent } from './component/spinner/spinner.component';
 
 @NgModule({
   imports: [
