@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 
-import { SharedModule } from '@app/shared';
+import { SharedModule } from '../../shared/shared.module';
 
 import { AboutRoutingModule } from './about-routing.module';
-import { AboutComponent } from './pages/about/about.component';
+import { AboutComponent } from './page/about/about.component';
 
 @NgModule({
   declarations: [AboutComponent],

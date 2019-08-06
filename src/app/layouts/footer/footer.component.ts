@@ -1,7 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { environment as env } from '@env/environment';
 import { Observable } from 'rxjs/Observable';
-import { ThemeService } from '@app/core';
+import { ThemeService } from '../../core/service/theme.service';
 
 @Component({
     selector: 'app-footer',
