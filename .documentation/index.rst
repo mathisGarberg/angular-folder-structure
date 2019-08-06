@@ -5,11 +5,12 @@ This project is an example of directory structure in an Angular application but 
 
 Here we cover the parts of the application directory structure and the function of each:
 
-* `core <core.rst>`_
-* `data <data.rst>`_
-* `layout <layout.rst>`_
-* `module <module.rst>`_
-* `shared <shared.rst>`_
+* `~/src/theme <theme.rst>`_
+* `~/src/app/core <core.rst>`_
+* `~/src/app/data <data.rst>`_
+* `~/src/app/layout <layout.rst>`_
+* `~/src/app/module <module.rst>`_
+* `~/src/app/shared <shared.rst>`_
     
 Be sure to check our `additional resources <additional-resources.rst>`_ for further reading on how to 
 improve access to and readability of your modules.
