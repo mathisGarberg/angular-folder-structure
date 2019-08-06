@@ -1,6 +1,8 @@
 Shared Module
 =============
 
+`~/src/app/shared <../src/app/shared>`_
+
 The shared module contains classes and resources which are always loaded when the application is loaded and
 which are shared between the main application and dynamically loaded modules.  By always loading with the
 application the shared components are ready whenever a module requests them.

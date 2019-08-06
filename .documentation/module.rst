@@ -1,6 +1,9 @@
 Module Directory
 ================
 
+`~/src/app/module <../src/app/module>`_
+
+
 The module directory contains a collection of modules which are each independent of each other.  This allows
 Angular to load only the module it requires to display the request thereby saving bandwidth and speeding the
 entire application.  
