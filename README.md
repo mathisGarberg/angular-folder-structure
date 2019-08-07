@@ -39,7 +39,7 @@ Scripts
 * npm start     -> Run dev. server on http://localhost:4200/
 * npm run build -> Lint code and build app for production in dist folder
 * npm run test  -> Run unit tests via Karma in watch mode
-* npm test:ci   ->	Lint code and run unit tests once for continuous integration
-* npm run e2e   ->	Run e2e tests using Protractor
+* npm test:ci   -> Lint code and run unit tests once for continuous integration
+* npm run e2e   -> Run e2e tests using Protractor
 * npm run lint  -> Lint code
 ```
