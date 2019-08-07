@@ -9,7 +9,7 @@ The project is inspired by the article on Medium called [How to define a highly 
 Documentation
 -------------
 
-Please [read the documentation](.documentation/index.rst) for details on each part of the directory structure.
+[Read The Documentation](.documentation/index.rst) for details on each part of the directory structure.
 
 
 Install
@@ -24,23 +24,6 @@ After cloneing locally and `cd` to the project directory, install the node libra
 ```sh
   npm install
 ```
-
-
-JSON Server
------------
-
-A JSON Server will run the backend for this project. To run this application you will need to launch the JSON Server to interact with the different API endpoint.
-
-Run the JSON Server
-```sh
-  npm run json:server
-```
-
-
-Development Server
-------------------
-
-Run `npm run start` for a dev server. The project will serve with the proxy a proxy flag by default. The proxy will highjack certain URLs, and send them to a specified backend server.
 
 
 Scripts
