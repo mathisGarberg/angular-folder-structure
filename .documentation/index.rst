@@ -3,7 +3,9 @@ Angular Folder Structure
 
 This project is an example of directory structure in an Angular application but it is also a working application.
 
-Here we cover the parts of the application directory structure and the function of each:
+
+Directory Structure
+-------------------
 
 * `~/media <media.rst>`_
 * `~/src/theme <theme.rst>`_
@@ -13,5 +15,10 @@ Here we cover the parts of the application directory structure and the function 
 * `~/src/app/module <module.rst>`_
 * `~/src/app/shared <shared.rst>`_
     
-Be sure to check our `additional resources <additional-resources.rst>`_ for further reading on how to 
-improve access to and readability of your modules.
+Be sure to check our `additional resources <additional-resources.rst>`_ for further reading on how to improve access to and readability of your modules.
+
+
+Demonstration Application
+-------------------------
+
+See this application running on our `demonstation application <https://mathisgarberg.github.io/angular-folder-structure/>`_
