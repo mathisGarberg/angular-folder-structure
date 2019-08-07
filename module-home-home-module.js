@@ -258,19 +258,19 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var routes = [
     {
         path: '',
-        children: [
-            {
-                path: 'home',
-                component: _page_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
-            },
-            {
-                path: 'projects/:id',
-                component: _page_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_4__["ProjectDetailsComponent"],
-                resolve: {
-                    project: _project_resolver_service__WEBPACK_IMPORTED_MODULE_2__["ProjectResolver"]
-                }
-            }
-        ]
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: _page_home_component__WEBPACK_IMPORTED_MODULE_3__["HomeComponent"]
+    },
+    {
+        path: 'projects/:id',
+        component: _page_project_details_project_details_component__WEBPACK_IMPORTED_MODULE_4__["ProjectDetailsComponent"],
+        resolve: {
+            project: _project_resolver_service__WEBPACK_IMPORTED_MODULE_2__["ProjectResolver"]
+        }
     }
 ];
 var HomeRoutingModule = /** @class */ (function () {
