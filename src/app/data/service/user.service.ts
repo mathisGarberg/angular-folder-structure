@@ -11,10 +11,10 @@ const routes = {
 })
 export class UserService {
 
-    constructor(private jsonApiService: JsonApiService) {}
+  constructor(
+    private jsonApiService: JsonApiService
+  ) {}
 
-    getAll() {
-        // this.
-    }
-
+  getAll() {
+  }
 }

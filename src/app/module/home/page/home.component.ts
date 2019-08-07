@@ -14,27 +14,26 @@ import { MyModalComponent } from '../modal/my-modal.component';
 })
 export class HomeComponent implements OnInit {
 
-    projects$: Observable<Project[]>;
+  projects$: Observable<Project[]>;
 
-    constructor(
-        private modalService: NgbModal,
-        private projectService: ProjectService
-    ) { }
+  constructor(
+    private modalService: NgbModal,
+    private projectService: ProjectService
+  ) {}
 
-    ngOnInit(): void {
-        this.loadProjects();
-    }
+  ngOnInit(): void {
+    this.loadProjects();
+  }
 
-    loadProjects() {
-        this.projects$ = this.projectService.getAll();
-    }
+  loadProjects() {
+    this.projects$ = this.projectService.getAll();
+  }
 
-    openMyModal() {
-        const modalRef = this.modalService.open(MyModalComponent);
-        modalRef.componentInstance.id = 1;
-        modalRef.result.then((result) => {
-            console.log(result);
-        });
-    }
-
+  openMyModal() {
+    const modalRef = this.modalService.open(MyModalComponent);
+    modalRef.componentInstance.id = 1;
+    modalRef.result.then((result) => {
+      console.log(result);
+    });
+  }
 }

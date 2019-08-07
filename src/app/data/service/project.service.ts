@@ -3,24 +3,21 @@ import { Observable } from 'rxjs';
 
 import { Project } from '../schema/project';
 import { ApiService } from './api.service';
-
-const routes = {
-    projects: '/projects',
-    project: (id: number) =>  `/projects/${id}`
-};
+import { JsonApiService } from './json-api.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
-    constructor(
-      private apiService: ApiService) {}
+  constructor (
+    private jsonApiService: JsonApiService
+  ) {}
 
-    getAll(): Observable<Array<Project>> {
-        return this.apiService.get(routes.projects);
-    }
+  getAll(): Observable<Array<Project>> {
+    return this.jsonApiService.get('/projects');
+  }
 
-    getSingle(id: number): Observable<Project> {
-        return this.apiService.get(routes.project(id));
-    }
+  getSingle(id: number): Observable<Project> {
+    return this.jsonApiService.get('/projects/' + id);
+  }
 }
