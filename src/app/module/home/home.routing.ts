@@ -7,24 +7,24 @@ import { ProjectDetailsComponent } from './page/project-details/project-details.
 export const routes: Routes = [
   {
     path: '',
-    children: [
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: 'projects/:id',
-        component: ProjectDetailsComponent,
-        resolve: {
-          project: ProjectResolver
-        }
-      }
-    ]
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'projects/:id',
+    component: ProjectDetailsComponent,
+    resolve: {
+      project: ProjectResolver
+    }
   }
 ];
 
 @NgModule({
-    imports: [RouterModule.forChild(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule]
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}
