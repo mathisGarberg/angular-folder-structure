@@ -12,6 +12,12 @@ Documentation
 [Read The Documentation](.documentation/index.rst) for details on each part of the directory structure.
 
 
+Demonstration Application
+-------------------------
+
+[See The Application](https://mathisgarberg.github.io/angular-folder-structure/) in action.  
+
+
 Install
 -------
 
@@ -29,10 +35,11 @@ After cloneing locally and `cd` to the project directory, install the node libra
 Scripts
 -------
 
-* npm start -> Run dev. server on http://localhost:4200/
+```
+* npm start     -> Run dev. server on http://localhost:4200/
 * npm run build -> Lint code and build app for production in dist folder
-* npm run test -> Run unit tests via Karma in watch mode
-* npm test:ci ->	Lint code and run unit tests once for continuous integration
-* npm run e2e ->	Run e2e tests using Protractor
-* npm run lint -> Lint code
-
+* npm run test  -> Run unit tests via Karma in watch mode
+* npm test:ci   ->	Lint code and run unit tests once for continuous integration
+* npm run e2e   ->	Run e2e tests using Protractor
+* npm run lint  -> Lint code
+```
