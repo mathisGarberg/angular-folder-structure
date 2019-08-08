@@ -63,3 +63,14 @@ Run
 
 To run the application type ``ng serve`` then browse to
 `http://localhost:4200/ <http://localhost:4200/>`_
+
+
+Contributing
+------------
+
+We welcome contributions of all kinds to this repository.  Submit a PR
+or create an issue for anything you can help us improve.
+
+For documentation contributions we recommend you install
+`restructuredText <https://docs.restructuredtext.net/index.html>`_ into your
+copy of vscode so you can lint and preview your work before it is submitted.
