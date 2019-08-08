@@ -18,7 +18,7 @@ and it is a working application.  The code for this projects can be found at
   additional-resources
 
 .. toctree::
-  :caption: Application resources
+  :caption: Application Resources
 
   demo
   install
