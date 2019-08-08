@@ -3,7 +3,7 @@
 Module Directory
 ================
 
-`~/src/app/module <../src/app/module>`_
+`~/src/app/module <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/module>`_
 
 The module directory contains a collection of modules which are each
 independent of each other.  This allows Angular to load only the module it
@@ -12,7 +12,7 @@ entire application.
 
 In order to accomplish this each module must have its own routing which is a
 ``loadChildren`` route resource defined in the ``AppRoutingModule``.  This is
-also covered in the `layout documentation <layout.rst>`_
+also covered in the `layout documentation <layout.html>`_
 
 A route can have children and each child can have a loadChildren property.
 From ``app-routing.module.ts``:

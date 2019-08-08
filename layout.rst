@@ -1,9 +1,7 @@
-`<< Documentation Index <index.rst>`_
-
 Layout Directory
 ================
 
-`~/src/app/layout <../src/app/layout>`_
+`~/src/app/layout <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/layout>`_
 
 The layout directory is a container of components which are declared in the
 AppModule.  The directory contains page-level components of content such as a
