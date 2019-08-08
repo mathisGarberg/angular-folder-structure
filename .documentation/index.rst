@@ -1,13 +1,14 @@
 Angular Folder Structure
 ========================
 
-This project is an example of directory structure in an Angular application but it is also a working application.
+This project is an example of directory structure in an Angular application 
+and it is a working application.
 
 
 Directory Structure
 -------------------
 
-Documentation is organized by the directories defined by this repository
+Documentation is organized by the directories defined by this repository.
 
 ~
   * /`media <media.rst>`_
