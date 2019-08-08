@@ -6,8 +6,8 @@ Data Module
 
 `~/src/app/data <../src/app/data>`_
 
-The data module is a top level directory and holds the schema (models/entities) and services (repositories)
-for data consumed by the application.
+The data module is a top level directory and holds the schema (models/entities) 
+and services (repositories) for data consumed by the application.
 
 By default there are two subdirectories::
 
@@ -15,7 +15,8 @@ By default there are two subdirectories::
     /schema
     /service 
 
-The schema directory holds the class definition files for data structures.  An example data structure:
+The schema directory holds the class definition files for data structures.  
+An example data structure:
 
 .. code-block:: ts
 
@@ -25,8 +26,9 @@ The schema directory holds the class definition files for data structures.  An e
     thumbnail: string;
   }
 
-The service directory holds the services for fetching data.  The service files are not necessarily 
-a 1:1 match with schema files.  An example service file:
+The service directory holds the services for fetching data.  
+The service files are not necessarily a 1:1 match with schema files.  
+An example service file:
 
 .. code-block:: ts
 
@@ -61,8 +63,9 @@ a 1:1 match with schema files.  An example service file:
 Multiple Data Sources
 ---------------------
 
-If your application consumes data from more than one source then the data directory should be restructured
-to contain subdirectories for each data source.  Do not create multiple modules for each data source::
+If your application consumes data from more than one source then the data 
+directory should be restructured to contain subdirectories for each data source.  
+Do not create multiple modules for each data source::
 
   ~/src/app/data
     /data-source-one
@@ -77,7 +80,8 @@ to contain subdirectories for each data source.  Do not create multiple modules 
 Schema Naming Standard
 ----------------------
 
-A schema file is very much like an entity file in an Object Relational Mapper.  This schema file is central
-to your application's consumption of data and therefore does not need cursory decorators such as calling it
-`ProjectSchema` or `ProjectModel`.  Schemas are special because they are the only plain-named class in the 
-application.
+A schema file is very much like an entity file in an Object Relational Mapper.  
+This schema file is central to your application's consumption of data and 
+therefore does not need cursory decorators such as calling it `ProjectSchema` or
+`ProjectModel`.  Schemas are special because they are the only plain-named class 
+in the application.

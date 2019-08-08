@@ -5,21 +5,24 @@ Layout Directory
 
 `~/src/app/layout <../src/app/layout>`_
 
-The layout directory is a container of components which are declared in the AppModule. 
-The directory contains page-level components of content such as a common footer, navigation, and header. 
-It also contains page layouts for the different sections of your application.
+The layout directory is a container of components which are declared in the 
+AppModule.  The directory contains page-level components of content such as a 
+common footer, navigation, and header.  It also contains page layouts for the 
+different sections of your application.
 
-Components like footer and navigation are handled the Angular way by importing them into a template:
+Components like footer and navigation are handled the Angular way by importing 
+them into a template:
 
 .. code-block:: html
 
   <app-nav></app-nav>
   
 
-Layouts are handled in a rather clever way.  By using child routes a top level route can define
-a layout to be used for its children.  Each module has its own routing so the top level ``AppRoutingModule``
-includes the module as a child of a route.  This code block is taken from ``app-routing.module.ts`` and 
-trimmed of extra content:
+Layouts are handled in a rather clever way.  By using child routes a top level 
+route can define a layout to be used for its children.  Each module has its own 
+routing so the top level ``AppRoutingModule`` includes the module as a child of 
+a route.  This code block is taken from ``app-routing.module.ts`` and trimmed of 
+extra content:
 
 .. code-block:: ts
 
@@ -36,8 +39,9 @@ trimmed of extra content:
     }
 
 
-When a route is called at ``/dashboard`` the ``ContentLayoutComponent`` is used as a layout and 
-handling of the routing is handed off to the HomeModule.  The ``ContentLayoutComponent`` has a ``router-outlet``:
+When a route is called at ``/dashboard`` the ``ContentLayoutComponent`` is used 
+as a layout and handling of the routing is handed off to the HomeModule.  
+The ``ContentLayoutComponent`` has a ``router-outlet``:
 
 .. code-block:: html
 
@@ -54,7 +58,8 @@ handling of the routing is handed off to the HomeModule.  The ``ContentLayoutCom
   </div>
 
 
-This ``router-outlet`` is used to display a route and component defined in the routing of the ``HomeRoutingModule``:
+This ``router-outlet`` is used to display a route and component defined in the 
+routing of the ``HomeRoutingModule``:
 
 .. code-block: ts
   
@@ -84,5 +89,5 @@ This ``router-outlet`` is used to display a route and component defined in the r
   export class HomeRoutingModule { }
 
 
-So the routes are ``/dashboard`` and ``/dashboard/projects/:id`` and they use the ContentLayoutComponent for
-their layout.
+So the routes are ``/dashboard`` and ``/dashboard/projects/:id`` and they use 
+the ContentLayoutComponent for their layout.
