@@ -1,7 +1,7 @@
 Angular Folder Structure
 ========================
 
-This project is an example of directory structure in an Angular application 
+This project is an example of directory structure in an Angular application
 and it is a working application.
 
 
@@ -14,7 +14,7 @@ Documentation is organized by the directories defined by this repository.
   * /`media <media.rst>`_
   * /src
 
-    * /app 
+    * /app
 
       * /`core <core.rst>`_
       * /`data <data.rst>`_
@@ -24,29 +24,31 @@ Documentation is organized by the directories defined by this repository.
 
     * /`theme <theme.rst>`_
 
-Be sure to check our `additional resources <additional-resources.rst>`_ for further reading on how to improve access to and readability of your modules.
+Be sure to check our `additional resources <additional-resources.rst>`_ for
+further reading on how to improve access to and readability of your
+directories.
 
 
 Demonstration Application
 -------------------------
 
-See this application running on our `demonstation application <https://mathisgarberg.github.io/angular-folder-structure/>`_
+See this application running on our
+`demonstation application <https://mathisgarberg.github.io/angular-folder-structure/>`_
 
 
 Installation
 ------------
 
-You can install this application locally and run it.  Assuming you already have ``typescript``, ``npm``, and ``ng`` installed, clone this repository, cd to the directory and run ``npm install``
-
-.. code-block::
+You can install this application locally and run it.  Assuming you already have
+``typescript``, ``npm``, and ``ng`` installed, clone this repository, cd to the
+directory and run ``npm install``::
 
   git clone https://github.com/mathisGarberg/angular-folder-structure.git
   cd angular-folder-structure
   npm install
 
-Included with this package are some custom npm scripts.  Here is a list of npm run commands and their descriptions:
-
-.. code-block::
+Included with this package are some custom npm scripts.  Here is a list of
+npm run commands and their descriptions::
 
   npm start     -> Run dev. server on http://localhost:4200/
   npm run build -> Lint code and build app for production in dist folder
@@ -56,7 +58,8 @@ Included with this package are some custom npm scripts.  Here is a list of npm r
   npm run lint  -> Lint code
 
 
-Run 
+Run
 ---
 
-To run the application type ``ng serve`` then browse to `http://localhost:4200/ <http://localhost:4200/>`_
+To run the application type ``ng serve`` then browse to
+`http://localhost:4200/ <http://localhost:4200/>`_
