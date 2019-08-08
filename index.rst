@@ -5,29 +5,17 @@ This project is an example of directory structure in an Angular application
 and it is a working application.  The code for this projects can be found at
 `https://github.com/mathisGarberg/angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_
 
+.. toctree::
+    :caption: Table of Contents
 
-Directory Structure
--------------------
-
-Documentation is organized by the directories defined by this repository.
-
-~
-  * /`media <media.html>`_
-  * /src
-
-    * /app
-
-      * /`core <core.html>`_
-      * /`data <data.html>`_
-      * /`layout <layout.html>`_
-      * /`module <module.html>`_
-      * /`shared <shared.html>`_
-
-    * /`theme <theme.html>`_
-
-Be sure to check our `additional resources <additional-resources.rst>`_ for
-further reading on how to improve access to and readability of your
-directories.
+    media
+    core
+    data
+    layout
+    module
+    shared
+    theme
+    additional-resources
 
 
 Demonstration Application
@@ -75,15 +63,3 @@ or create an issue for anything you can help us improve.
 For documentation contributions we recommend you install
 `restructuredText <https://docs.restructuredtext.net/index.html>`_ into your
 copy of vscode so you can lint and preview your work before it is submitted.
-
-
-.. toctree::
-    :caption: Table of Contents
-
-    media
-    core
-    data
-    layout
-    module
-    shared
-    theme
