@@ -9,7 +9,7 @@ The project is inspired by the article on Medium called [How to define a highly 
 Documentation
 -------------
 
-[Read The Documentation](https://sphinx-rtd-theme.readthedocs.io/en/latest/) for details on each part of the directory structure.
+[Read The Documentation](https://angular-folder-structure.readthedocs.io/en/latest/#) for details on each part of the directory structure.
 
 
 Demonstration Application
