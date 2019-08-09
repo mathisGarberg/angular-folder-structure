@@ -1,5 +1,3 @@
-`<< Documentation Index <index.rst>`_
-
 Module Directory
 ================
 

@@ -2,7 +2,7 @@ Angular Folder Structure
 ========================
 
 This project is an example of directory structure in an Angular application
-and it is a working application.  The code for this projects can be found at
+and it is a working application.  The code for this project can be found at
 `https://github.com/mathisGarberg/angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_
 
 .. toctree::
