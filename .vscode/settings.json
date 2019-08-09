@@ -1,0 +1,7 @@
+{
+    "restructuredtext.builtDocumentationPath": "${workspaceRoot}/dist",
+    "restructuredtext.updateOnTextChanged"    : "true",
+    "restructuredtext.updateDelay"            : 300,
+    "restructuredtext.sphinxBuildPath": null,
+    "restructuredtext.confPath": "${workspaceFolder}"
+}

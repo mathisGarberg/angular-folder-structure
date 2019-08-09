@@ -1,9 +1,7 @@
-`<< Documentation Index <index.rst>`_
-
 Shared Module
 =============
 
-`~/src/app/shared <../src/app/shared>`_
+`~/src/app/shared <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/shared>`_
 
 The shared module contains classes and resources which are always loaded when
 the application is loaded and which are shared between the main application

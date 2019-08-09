@@ -1,10 +1,7 @@
-`<< Documentation Index <index.rst>`_
-
-
 Data Module
 ===========
 
-`~/src/app/data <../src/app/data>`_
+`~/src/app/data <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/data>`_
 
 The data module is a top level directory and holds the schema (models/entities)
 and services (repositories) for data consumed by the application.

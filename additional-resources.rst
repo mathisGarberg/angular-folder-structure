@@ -1,5 +1,3 @@
-`<< Documentation Index <index.rst>`_
-
 Additional Resources
 ====================
 
