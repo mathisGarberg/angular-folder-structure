@@ -12,3 +12,15 @@ The shared module is a good place to import and export the ``FormsModule``
 and the ``ReactiveFormsModule``.  It is also good for the ``FontAwesomeModule``
 and any other resource used by some modules some of the time but not all
 modules all of the time.
+
+
+Install
+-------
+
+::
+
+  ng generate module Shared
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.

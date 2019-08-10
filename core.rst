@@ -11,3 +11,15 @@ app services such as logging go in this module.
 This module is a good candidate for
 `module aliasing <additional-resources.rst>`_ such as aliasing the module
 to **@app**
+
+
+Install
+-------
+
+::
+
+  ng generate module Core
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.

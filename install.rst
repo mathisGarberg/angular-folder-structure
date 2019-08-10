@@ -25,3 +25,7 @@ Run Locally
 
 To run the application type ``ng serve`` then browse to
 `http://localhost:4200/ <http://localhost:4200/>`_
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.

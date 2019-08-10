@@ -68,3 +68,17 @@ through ``forChild``.
 
 Besides routing any module inside the ``module`` directory can be as simple or
 complicated as you wish.
+
+
+Install
+-------
+
+::
+
+  mkdir src/app/module
+
+For each new module run ``ng generate module module/NewModule``
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.

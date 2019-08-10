@@ -82,3 +82,15 @@ This schema file is central to your application's consumption of data and
 therefore does not need cursory decorators such as calling it `ProjectSchema`
 or `ProjectModel`.  Schemas are special because they are the only plain-named
 class in the application.
+
+
+Install
+-------
+
+::
+
+  ng generate module Data
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
