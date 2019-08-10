@@ -7,3 +7,7 @@ Additional Resources
 
 * `Aliasing modules <https://www.npmjs.com/package/module-alias>`_ is a popular
   way to make your import statements more tidy.
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.

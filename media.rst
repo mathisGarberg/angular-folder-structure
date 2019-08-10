@@ -11,3 +11,15 @@ for the project.
 into media then modify the ``scss/_variables.scss`` then compile.  Link the
 dist boostrap.min.css into your assets directory and you've got a custom
 bootstrap.
+
+
+Install
+-------
+
+::
+
+  mkdir media
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.

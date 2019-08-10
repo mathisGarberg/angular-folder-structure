@@ -89,3 +89,17 @@ routing of the ``HomeRoutingModule``:
 
 So the routes are ``/dashboard`` and ``/dashboard/projects/:id`` and they use
 the ContentLayoutComponent for their layout.
+
+
+Install
+-------
+
+::
+
+  mkdir src/app/layout
+  ng generate component layout/Header
+  ng generate component layout/Footer
+
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
