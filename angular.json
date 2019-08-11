@@ -36,7 +36,7 @@
               }
             ],
             "styles": [
-              { "input": "src/main.scss" }
+              { "input": "src/styles.scss" }
             ],
             "scripts": []
           },
