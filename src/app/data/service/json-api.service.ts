@@ -1,8 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable, throwError, of } from 'rxjs';
-import { delay, catchError } from 'rxjs/operators';
-import { environment } from '@env/environment';
+import { Observable, of } from 'rxjs';
 import data from './json/data.json';
 
 @Injectable({
