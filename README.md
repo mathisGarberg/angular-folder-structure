@@ -1,4 +1,4 @@
-Highly Scalable Angular Folder Structure
+Angular Folder Structure - Highly Scalable
 ========================================
 
 The project is inspired by the article on ITNEXT called
