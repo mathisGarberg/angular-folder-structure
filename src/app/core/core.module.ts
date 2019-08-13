@@ -11,23 +11,22 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 @NgModule({
-    imports: [
-        HttpClientModule,
-        NgxSpinnerModule
-    ],
-    providers: [
-        AuthGuard,
-        NoAuthGuard,
-
-        {
-            provide: HTTP_INTERCEPTORS,
-            useClass: TokenInterceptor,
-            multi: true
-        }
-    ]
+  imports: [
+    HttpClientModule,
+    NgxSpinnerModule
+  ],
+  providers: [
+    AuthGuard,
+    NoAuthGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptor,
+      multi: true
+    }
+  ]
 })
 export class CoreModule {
-    constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
-        throwIfAlreadyLoaded(parentModule, 'CoreModule');
-    }
+  constructor(@Optional() @SkipSelf() parentModule: CoreModule) {
+    throwIfAlreadyLoaded(parentModule, 'CoreModule');
+  }
 }

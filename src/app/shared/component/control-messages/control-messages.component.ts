@@ -13,8 +13,6 @@ export class ControlMessagesComponent {
   @Input()
   public labelName?: string;
 
-  constructor() {}
-
   get errorMessage(): boolean {
     for (const propertyName in this.control.errors) {
       if (this.control.errors.hasOwnProperty(propertyName) && this.control.touched) {

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { Project } from '../schema/project';
-import { ApiService } from './api.service';
 import { JsonApiService } from './json-api.service';
 
 @Injectable({

@@ -3,7 +3,7 @@ import { of, Observable, throwError } from 'rxjs';
 
 import { User } from '../../data/schema/user';
 
-export class ILoginContext {
+interface LoginContextInterface {
   username: string;
   password: string;
   token: string;
@@ -21,12 +21,11 @@ const defaultUser = {
 export class AuthService {
   token: string;
 
-  constructor() { }
-
-  login(loginContext: ILoginContext): Observable<User> {
+  login(loginContext: LoginContextInterface): Observable<User> {
     if (
       loginContext.username === defaultUser.username &&
-      loginContext.password === defaultUser.password) {
+      loginContext.password === defaultUser.password
+    ) {
         return of(defaultUser);
     }
 
@@ -40,5 +39,4 @@ export class AuthService {
   getToken() {
     return this.getToken;
   }
-
 }
