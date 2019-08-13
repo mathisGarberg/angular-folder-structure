@@ -19,7 +19,7 @@ and it is a working application.  The code for this project can be found at
   layout
   module
   shared
-  theme
+  styles
   additional-resources
 
 .. toctree::
