@@ -7,8 +7,8 @@
 
 @include mat-core();
 
-@import './theme/black-theme.scss';
-@import './theme/light-theme.scss';
+@import './styles/black-theme.scss';
+@import './styles/light-theme.scss';
 
 // import custom component themes here
 @import 'styles-reset.scss-theme';
