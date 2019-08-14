@@ -42,6 +42,11 @@ default Angular application::
   module
   shared
   styles
+
+.. toctree::
+  :caption: Additional Resources
+
+  path-alias
   additional-resources
 
 .. toctree::

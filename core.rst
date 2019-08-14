@@ -10,8 +10,7 @@ belong in this directory.  Services for the app.module such as logging go in
 this module.
 
 .. note::
-  This module is a good candidate for
-  `module aliasing <additional-resources.rst>`_ such as aliasing the module
+  This module is recommended for a  `path alias <path-alias.html>`_
   to **@app**
 
 
