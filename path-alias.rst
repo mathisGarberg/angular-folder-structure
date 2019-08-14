@@ -1,8 +1,8 @@
 Path Alias
 ==========
 
-Path aliases simplify paths by giving a link to the path rather than the
-fully qualified path name.
+Path aliases simplify paths by giving a link to the path rather than 
+using the the fully qualified path name.
 
 
 Create Aliases
