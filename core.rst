@@ -3,7 +3,7 @@ Core Module
 
 `~/src/app/core <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/core>`_
 
-This module is for classes used by appmodule.  Resources
+This module is for classes used by app.module.  Resources
 which are always loaded such as route guards, HTTP interceptors, and
 application level services, such as the ThemeService in this application,
 belong in this directory.  Services for the app.module such as logging go in
