@@ -47,7 +47,7 @@ default Angular application::
   :caption: Additional Resources
 
   path-alias
-  additional-resources
+  furthur-reading
 
 .. toctree::
   :caption: Application Resources
