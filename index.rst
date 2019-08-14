@@ -1,9 +1,31 @@
 Angular Folder Structure
 ========================
 
-This project is an example of directory structure in an Angular application
+Based on best practices from the community, other github Angular projects,
+developer experience from production Angular projects, and contributors,
+this project goal is to create a skeleton structure which is
+flexible for projects big or small.
+
+This project defines directory structure in an Angular application
 and it is a working application.  The code for this project can be found at
 `https://github.com/mathisGarberg/angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_
+
+Directory Tree Structure
+------------------------
+
+This tree represents the directories this repository proposes be added to a
+default Angular application::
+
+  .
+  ├── media
+  └── src
+      ├── app
+      │   ├── core
+      │   ├── data
+      │   ├── layout
+      │   ├── module
+      │   └── shared
+      └── styles
 
 .. toctree::
   :caption: Getting Started
