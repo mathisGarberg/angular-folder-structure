@@ -3,9 +3,8 @@ Shared Module
 
 `~/src/app/shared <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/shared>`_
 
-The shared module contains classes and resources which are always loaded when
-the application is loaded and which are shared between the main application
-and dynamically loaded modules.  By always loading with the
+The shared module contains classes and resources which are used in more
+than one dynamically loaded module.  By always loading with the
 application the shared components are ready whenever a module requests them.
 
 The shared module is a good place to import and export the ``FormsModule``
