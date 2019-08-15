@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { Project } from '../../../../data/schema/project';
 
@@ -7,11 +7,7 @@ import { Project } from '../../../../data/schema/project';
   templateUrl: './project-item.component.html',
   styleUrls: ['./project-item.component.scss']
 })
-export class ProjectItemComponent implements OnInit {
+export class ProjectItemComponent {
   @Input() project: Project;
   flipped = false;
-
-  constructor() {}
-
-  ngOnInit() {}
 }

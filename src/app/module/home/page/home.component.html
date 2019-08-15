@@ -1,10 +1,15 @@
 <div id="content">
-    <button class="btn btn-primary" (click)="openMyModal()">Open Modal</button>
+  <div>
+    <button style="float: right" class="btn btn-primary" (click)="openMyModal()">
+      Open Modal
+    </button>      
+    
     <h1>Projects</h1>
+  </div>
 
-    <ngx-masonry [useImagesLoaded]="true" [options]="{ transitionDuration: '0.8s' }">
-      <ngxMasonryItem class="masonry-item" *ngFor="let project of projects$ | async">
-        <app-project-item [project]="project"></app-project-item>
-      </ngxMasonryItem>
-    </ngx-masonry>
+  <ngx-masonry [useImagesLoaded]="true" [options]="{ transitionDuration: '0.8s' }">
+    <ngxMasonryItem class="masonry-item" *ngFor="let project of projects$ | async">
+      <app-project-item [project]="project"></app-project-item>
+    </ngxMasonryItem>
+  </ngx-masonry>
 </div>
