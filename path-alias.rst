@@ -44,10 +44,3 @@ statements by using the alias::
 becomes::
 
   import { SharedModule } from '@shared/shared.module';
-
-
-Furthur Reading
----------------
-
-* `This article <https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/>`_
-  describes the problem and describes the solution.
