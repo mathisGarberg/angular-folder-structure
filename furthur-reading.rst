@@ -8,6 +8,9 @@ Furthur Reading
 * `Path Aliasing <https://christianlydemann.com/simpler-typescript-paths-with-path-aliases/>`_
   is a popular way to make your import statements more tidy.
 
+* `Some Best Practices <https://medium.com/@tomastrajan/6-best-practices-pro-tips-for-angular-cli-better-developer-experience-7b328bc9db81>`_
+  which follow the advice here closely.
+
 
 .. note::
   This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
