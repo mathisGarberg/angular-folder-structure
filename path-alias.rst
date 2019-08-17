@@ -44,3 +44,6 @@ statements by using the alias::
 becomes::
 
   import { SharedModule } from '@shared/shared.module';
+
+.. note::
+  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
