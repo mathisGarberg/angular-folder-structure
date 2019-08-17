@@ -12,5 +12,19 @@ Furthur Reading
   which follow the advice here closely.
 
 
+Alternative Directory Structure Projects
+----------------------------------------
+
+These projects have similar goals to this project and provide a wider view of
+the problem and solutions.
+
+* `starter-kit <https://github.com/ngx-rocket/starter-kit>`_
+
+* `angular-ngrx-material-starter <https://github.com/tomastrajan/angular-ngrx-material-starter>`_
+
+* `angular-starter <https://github.com/PatrickJS/angular-starter>`_
+
+* `Angular-Full-Stack <https://github.com/DavideViolante/Angular-Full-Stack>`_
+
 .. note::
   This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
