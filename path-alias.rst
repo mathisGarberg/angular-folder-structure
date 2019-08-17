@@ -1,7 +1,7 @@
 Path Alias
 ==========
 
-Path aliases simplify paths by giving a link to the path rather than 
+Path aliases simplify paths by giving a link to the path rather than
 using the the fully qualified path name.
 
 
@@ -15,7 +15,7 @@ Run this command to install the json program which we will use to modify
 
 To create an alias run this command from your root application directory::
 
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@env/*'] = ['environment/*']"
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@dev/*'] = ['src/app/core/*']"
 
 The ``@env`` is the alias.  The path, ``environment`` in this example, is the
 path from the src directory to the directory you would like to alias.
@@ -28,10 +28,11 @@ Recommended are aliases to `core <core.html>`_, `shared <shared.html>`_, and
 ``environment``.  These aliases are not used in the example code in order to
 stress new directory structures but their use will simplify your development::
 
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@dev/*'] = ['app/core/*']"
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@shared/*'] = ['app/shared/*']"
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@env/*'] = ['environment/*']"
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@dev/*'] = ['src/app/core/*']"
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@shared/*'] = ['src/app/shared/*']"
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']"
 
+Note the alias for @env goes directly to the environment file.  
 
 Using Aliases
 -------------
@@ -44,6 +45,10 @@ statements by using the alias::
 becomes::
 
   import { SharedModule } from '@shared/shared.module';
+
+The environment ``@env`` alias to a file is used this way::
+
+  import { environment } from '@env';
 
 .. note::
   This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
