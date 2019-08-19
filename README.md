@@ -10,7 +10,7 @@ Angular projects, developer experience from production Angular projects, and
 contributors to this reposiory, this project goal is to *create a skeleton
 structure which is flexible for projects big or small*.
 
-![login screen screenshot](https://github.com/mathisGarberg/angular-folder-structure/tree/master/media/screenshot.png)
+![login screen screenshot](https://raw.githubusercontent.com/mathisGarberg/angular-folder-structure/master/media/screenshot.png)
 
 Tree Structure
 --------------
