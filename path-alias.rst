@@ -30,6 +30,7 @@ stress new directory structures but their use will simplify your development::
 
   json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['src/app/core/*']"
   json -f tsconfig.json -I -e "this.compilerOptions.paths['@shared/*'] = ['src/app/shared/*']"
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@modules/*'] = ['src/app/modules/*']"
   json -f tsconfig.json -I -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']"
 
 Note the alias for @env goes directly to the environment file.  

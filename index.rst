@@ -23,7 +23,7 @@ default Angular application::
       │   ├── core
       │   ├── data
       │   ├── layout
-      │   ├── module
+      │   ├── modules
       │   └── shared
       └── styles
 
@@ -39,7 +39,7 @@ default Angular application::
   core
   data
   layout
-  module
+  modules
   shared
   styles
 

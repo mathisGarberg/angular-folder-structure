@@ -3,7 +3,7 @@ Module Directory
 
 `~/src/app/module <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/module>`_
 
-The module directory contains a collection of modules which are each
+The modules directory contains a collection of modules which are each
 independent of each other.  This allows Angular to load only the module it
 requires to display the request thereby saving bandwidth and speeding the
 entire application.
@@ -41,7 +41,7 @@ From ``app-routing.module.ts``:
   },
 
 Each child must have its own base path from which it can load children from a
-module in the ``module`` directory.  Here is the routing for the About page:
+module in the ``modules`` directory.  Here is the routing for the About page:
 
 .. code-block:: ts
 
@@ -66,7 +66,7 @@ module in the ``module`` directory.  Here is the routing for the About page:
 It is necessary to add the child routes to the RouterModule
 through ``forChild``.
 
-Besides routing any module inside the ``module`` directory can be as simple or
+Besides routing any module inside the ``modules`` directory can be as simple or
 complicated as you wish.
 
 
@@ -75,9 +75,9 @@ Install
 
 ::
 
-  mkdir src/app/module
+  mkdir src/app/modules
 
-For each new module run ``ng generate module module/NewModule``
+For each new module run ``ng generate module modules/NewModule``
 
 
 .. note::
