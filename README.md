@@ -1,14 +1,16 @@
 Angular Folder Structure - Highly Scalable
 ========================================
 
-The project is inspired by the article on ITNEXT called
+![docs badge](https://readthedocs.org/projects/angular-folder-structure/badge/?version=latest)
+
+This project is inspired by the article on ITNEXT called
 "[How to define a highly scalable folder structure for your Angular project](https://itnext.io/choosing-a-highly-scalable-folder-structure-in-angular-d987de65ec7)"
 by Mathis Garberg. Based on best practices from the community, other github
 Angular projects, developer experience from production Angular projects, and
 contributors to this reposiory, this project goal is to *create a skeleton
 structure which is flexible for projects big or small*.
 
-![login screen screenshot](https://i.imgur.com/ViKy3U9.png)
+![login screen screenshot](https://github.com/mathisGarberg/angular-folder-structure/tree/master/media/screenshot.png)
 
 Tree Structure
 --------------
