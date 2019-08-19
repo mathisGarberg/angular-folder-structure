@@ -5,7 +5,7 @@ import { MyModalComponent } from './modal/my-modal.component';
 import { HomeComponent } from './page/home.component';
 import { HomeRoutingModule } from './home.routing';
 
-import { SharedModule } from '../../shared/shared.module';
+import { SharedModule } from '@shared/shared.module';
 import { ProjectItemComponent } from './page/project-item/project-item.component';
 import { ProjectDetailsComponent } from './page/project-details/project-details.component';
 

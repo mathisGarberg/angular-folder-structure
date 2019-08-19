@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { environment } from '@env/environment';
+import { environment } from '@env';
 import { Observable } from 'rxjs';
 import { ThemeService } from 'app/core/service/theme.service';
 

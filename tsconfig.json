@@ -16,11 +16,17 @@
       "node_modules/@types"
     ],
     "paths": {
-      "@env/*": [
-        "environments/*"
+      "@app/*": [
+        "app/core/*"
       ],
-      "@testing/*": [
-        "testing/*"
+      "@shared/*": [
+        "app/shared/*"
+      ],
+      "@env": [
+        "environments/environment"
+      ],
+      "@modules/*": [
+        "app/modules/*"
       ]
     },
     "lib": [

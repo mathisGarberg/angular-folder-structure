@@ -7,12 +7,12 @@
 
 @include mat-core();
 
-@import './styles/black-theme.scss';
-@import './styles/light-theme.scss';
+@import './styles/themes/black-theme.scss';
+@import './styles/themes/light-theme.scss';
 
 // import custom component themes here
 @import 'styles-reset.scss-theme';
-@import 'app/module/home/page/project-item/project-container.component.scss-theme.scss';
+@import 'app/modules/home/page/project-item/project-container.component.scss-theme.scss';
 
 @mixin custom-components-theme($theme) {
   @include my-styles-reset-theme($theme);
