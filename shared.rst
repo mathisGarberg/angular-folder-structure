@@ -12,6 +12,10 @@ and the ``ReactiveFormsModule``.  It is also good for the ``FontAwesomeModule``
 and any other resource used by some modules some of the time but not all
 modules all of the time.
 
+.. note::
+  This module is recommended for a  `path alias <path-alias.html>`_
+  to **@shared**
+
 
 Install
 -------
