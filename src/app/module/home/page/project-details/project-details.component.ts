@@ -13,12 +13,9 @@ import { map } from 'rxjs/operators';
 export class ProjectDetailsComponent implements OnInit {
   project$: Observable<Project>;
 
-  constructor(
-    private route: ActivatedRoute
-  ) { }
+  constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.project$ = this.route.data.pipe(map((data) => data.project));
+    this.project$ = this.route.data.pipe(map(data => data.project));
   }
-
 }
