@@ -1,10 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
-
-import { NoAuthGuard } from './core/guard/no-auth.guard';
+import { NoAuthGuard } from '@app/guard/no-auth.guard';
 
 const routes: Routes = [
   {
@@ -20,17 +18,17 @@ const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () =>
-          import('./module/home/home.module').then(m => m.HomeModule)
+          import('@modules/home/home.module').then(m => m.HomeModule)
       },
       {
         path: 'about',
         loadChildren: () =>
-          import('./module/about/about.module').then(m => m.AboutModule)
+          import('@modules/about/about.module').then(m => m.AboutModule)
       },
       {
         path: 'contact',
         loadChildren: () =>
-          import('./module/contact/contact.module').then(m => m.ContactModule)
+          import('@modules/contact/contact.module').then(m => m.ContactModule)
       }
     ]
   },
@@ -38,7 +36,7 @@ const routes: Routes = [
     path: 'auth',
     component: AuthLayoutComponent,
     loadChildren: () =>
-      import('./module/auth/auth.module').then(m => m.AuthModule)
+      import('@modules/auth/auth.module').then(m => m.AuthModule)
   },
   // Fallback when no prior routes is matched
   { path: '**', redirectTo: '/auth/login', pathMatch: 'full' }

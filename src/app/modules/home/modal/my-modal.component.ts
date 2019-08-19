@@ -8,12 +8,13 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class MyModalComponent implements OnInit {
 
-    @Input() id;
+  @Input() id;
 
-    constructor(public activeModal: NgbActiveModal) { }
+  constructor(
+    public activeModal: NgbActiveModal
+  ) { }
 
-    ngOnInit(): void {
-        console.log(this.id);
-    }    
-
+  ngOnInit(): void {
+      console.log(this.id);
+  }
 }

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { ThemeService } from '../../core/service/theme.service';
+import { ThemeService } from '@app/service/theme.service';
 
 @Component({
   selector: 'app-content-layout',
