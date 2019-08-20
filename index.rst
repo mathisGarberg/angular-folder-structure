@@ -59,7 +59,7 @@ Structure Parts carefully to understand them all.
   install
 
 .. toctree::
-  :caption: Alternative Directory Structures
+  :caption: Directory Structures
 
   default
   neolithic
