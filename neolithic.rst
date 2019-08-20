@@ -62,10 +62,10 @@ These instructions are to install this directory structure to a brand new
   ng generate module module/Data
   json --version || npm install -g json
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['module/app/*']" \
-    -e "this.compilerOptions.paths['@shared/*'] = ['module/shared/*']" \
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['app/module/app/*']" \
+    -e "this.compilerOptions.paths['@shared/*'] = ['app/module/shared/*']" \
     -e "this.compilerOptions.paths['@env/*'] = ['environment/*']" \
-    -e "this.compilerOptions.paths['@data/*'] = ['module/data/*']"
+    -e "this.compilerOptions.paths['@data/*'] = ['app/module/data/*']"
   mkdir -p .vscode
   test -f .vscode/settings.json || echo "{}" > .vscode/settings.json
   json -f .vscode/settings.json -I -e "this['files.exclude'] = {'**src/app': true}"

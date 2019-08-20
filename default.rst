@@ -23,13 +23,13 @@ Tree Structure
   ├── media
   └── src
       ├── app
-      │   ├── core
+      │   ├── core (@app)
       │   ├── data
       │   ├── layout
       │   ├── modules
-      │   └── shared
+      │   └── shared (@shared)
       ├── assets
-      ├── environments
+      ├── environments (@env) [@env links to environment file]
       └── styles
           └── themes
 
@@ -49,8 +49,8 @@ These instructions are to install this directory structure to a brand new
   mkdir src/styles && mkdir src/styles/themes
   json --version || npm install -g json
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['module/app/*']" \
-    -e "this.compilerOptions.paths['@shared/*'] = ['module/shared/*']" \
+  json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['app/core/*']" \
+    -e "this.compilerOptions.paths['@shared/*'] = ['app/shared/*']" \
     -e "this.compilerOptions.paths['@env/*'] = ['environment/*']"
 
 
