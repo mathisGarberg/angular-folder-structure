@@ -4,7 +4,7 @@ Structure Overview
 The angular-folder-structure project goal is to create a skeleton structure
 which is flexible for projects big or small.
 
-The Anuglar style guide has this to say on the subject of directory structure:
+The Angular style guide has this to say on the subject of directory structure:
 
   Have a near-term view of implementation and a long-term vision. Start small
   but keep in mind where the app is heading down the road.
