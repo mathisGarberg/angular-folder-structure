@@ -75,3 +75,4 @@ These instructions are to install this directory structure to a brand new
 
 .. note::
   This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
+  If you find this useful please add your star to the project.
