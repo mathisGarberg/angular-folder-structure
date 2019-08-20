@@ -47,6 +47,12 @@ Structure Parts carefully to understand them all.
   styles
 
 .. toctree::
+  :caption: Directory Structures
+
+  default
+  neolithic
+
+.. toctree::
   :caption: Additional Resources
 
   path-alias
@@ -57,12 +63,6 @@ Structure Parts carefully to understand them all.
 
   demo
   install
-
-.. toctree::
-  :caption: Directory Structures
-
-  default
-  neolithic
 
 Contributing
 ------------
