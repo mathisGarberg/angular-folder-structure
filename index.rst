@@ -27,13 +27,16 @@ default Angular application::
       │   └── shared
       └── styles
 
+Each part of this tree is optional so please read through the Directory
+Structure Parts carefully to understand them all.
+
 .. toctree::
   :caption: Getting Started
 
   overview
 
 .. toctree::
-  :caption: Directory Structure
+  :caption: Directory Structure Parts
 
   media
   core
@@ -55,6 +58,11 @@ default Angular application::
   demo
   install
 
+.. toctree::
+  :caption: Alternative Directory Structures
+
+  default
+  neolithic
 
 Contributing
 ------------
