@@ -1,7 +1,9 @@
 Neolithic Directory Structure
 =============================
 
-This is an alternative to the primary directory structure this repoisotry
+-- Tom H Anderson <tom.h.anderson@gmail.com>
+
+This is an alternative to the primary directory structure this repository
 promotes.
 
 
@@ -71,11 +73,6 @@ These instructions are to install this directory structure to a brand new
   json -f .vscode/settings.json -I -e "this['files.exclude'] = {'**src/app': true}"
 
 
-Author
-------
-
-Tom H Anderson <tom.h.anderson@gmail.com>
-
-
 .. note::
   This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
+  If you find this useful please add your star to the project.

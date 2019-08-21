@@ -47,6 +47,12 @@ Structure Parts carefully to understand them all.
   styles
 
 .. toctree::
+  :caption: Directory Structures
+
+  default
+  neolithic
+
+.. toctree::
   :caption: Additional Resources
 
   path-alias
@@ -57,12 +63,6 @@ Structure Parts carefully to understand them all.
 
   demo
   install
-
-.. toctree::
-  :caption: Directory Structures
-
-  default
-  neolithic
 
 Contributing
 ------------
@@ -77,3 +77,4 @@ copy of vscode so you can lint and preview your work before it is submitted.
 
 .. note::
   This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
+  If you find this useful please add your star to the project.
