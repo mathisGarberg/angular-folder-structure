@@ -19,7 +19,7 @@ To create an alias run this command from your root application directory::
   json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['app/core/*']"
 
 The ``@app`` is the alias.  The path, ``app/core/*`` in this example, is the
-path from the root directory to the directory you would like to alias.
+path from the root ``src`` directory to the directory you would like to alias.
 
 
 Recommended Aliases
@@ -52,6 +52,5 @@ The environment ``@env`` alias to a file is used this way::
 
   import { environment } from '@env';
 
-.. note::
-  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
-  If you find this useful please add your star to the project.
+
+.. include:: footer.rst
