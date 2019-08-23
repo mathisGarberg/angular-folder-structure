@@ -27,6 +27,4 @@ To run the application type ``ng serve`` then browse to
 `http://localhost:4200/ <http://localhost:4200/>`_
 
 
-.. note::
-  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
-  If you find this useful please add your star to the project.
+.. include:: footer.rst

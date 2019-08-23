@@ -73,6 +73,4 @@ These instructions are to install this directory structure to a brand new
   json -f .vscode/settings.json -I -e "this['files.exclude'] = {'**src/app': true}"
 
 
-.. note::
-  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
-  If you find this useful please add your star to the project.
+.. include:: footer.rst
