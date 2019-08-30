@@ -144,5 +144,4 @@ Install
 
   mkdir src/styles
 
-.. note::
-  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
+.. include:: footer.rst

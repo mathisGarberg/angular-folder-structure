@@ -75,6 +75,4 @@ For documentation contributions we recommend you install
 copy of vscode so you can lint and preview your work before it is submitted.
 
 
-.. note::
-  This is documentation For `angular-folder-structure <https://github.com/mathisGarberg/angular-folder-structure>`_.
-  If you find this useful please add your star to the project.
+.. include:: footer.rst
