@@ -102,28 +102,37 @@ Then those files are referred to in the `styles.scss` files:
     @include custom-components-theme($my-black-theme);
   }
 
-Finally, the application content needs to be placed inside either a ``mat-sidenav-container`` element
-or have the ``mat-app-background`` class applied to work. This application follows the last approach
-by appending this class to the ``div`` that wraps the app-content in the 
+The application content needs to be placed inside either a ``mat-sidenav-container`` element
+or have the ``mat-app-background`` class applied to work. This application follows the last 
+approach by appending this class to the ``div`` that wraps the app-content in the 
 ``src/app/layout/content-layout/content-layout.component.html`` file:
 
 .. code-block:: html
 
-   <div class="mat-app-background">
-    <app-nav></app-nav>
+  <div class="my-dark-theme">
+    <div class="mat-app-background">
+      <app-nav></app-nav>
 
-      <div class="container">
-        <router-outlet></router-outlet>
-      </div>
+        <div class="container">
+          <router-outlet></router-outlet>
+        </div>
 
-    <app-footer></app-footer>
+      <app-footer></app-footer>
+    </div>
   </div>
+
+The height of the viewport the theme should affects is also defined:
 
 .. code-block:: scss
 
   .mat-app-background {
     height: 100%;
   }
+
+Switching Themes
+---------
+
+
 
 Bootstrap
 ---------
