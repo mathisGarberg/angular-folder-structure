@@ -129,11 +129,6 @@ The height of the viewport the theme should affects is also defined:
     height: 100%;
   }
 
-Switching Themes
----------
-
-
-
 Bootstrap
 ---------
 
