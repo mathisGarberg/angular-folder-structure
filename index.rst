@@ -1,3 +1,6 @@
+.. meta::
+  :google-site-verification: o4DRDDBzXIZ6v7ZYXfm9lwI__c10cXfoliXEDARd5rE
+
 Angular Folder Structure
 ========================
 
