@@ -5,9 +5,8 @@ Core Module
 
 This module is for classes used by app.module.  Resources
 which are always loaded such as route guards, HTTP interceptors, and
-application level services, such as the ThemeService in this application,
-belong in this directory.  Services for the app.module such as logging go in
-this module.
+application level services, such as the ThemeService ang logging belong in this 
+directory.
 
 .. note::
   This module is recommended for a  `path alias <path-alias.html>`_
