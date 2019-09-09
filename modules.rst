@@ -1,7 +1,7 @@
 Module Directory
 ================
 
-`~/src/app/module <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/module>`_
+`~/src/app/modules <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/modules>`_
 
 The modules directory contains a collection of modules which are each
 independent of each other.  This allows Angular to load only the module it

@@ -16,6 +16,16 @@ and it is a working application.  The code for this project can be found at
 Directory Tree Structure
 ------------------------
 
+This is a default Angular application directory tree::
+
+  .
+  ├── e2e
+  │   └── src
+  └── src
+      ├── app
+      ├── assets
+      └── environments
+
 This tree represents the directories this repository proposes be added to a
 default Angular application::
 
