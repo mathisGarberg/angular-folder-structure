@@ -21,6 +21,11 @@ To create an alias run this command from your root application directory::
 The ``@app`` is the alias.  The path, ``app/core/*`` in this example, is the
 path from the root ``src`` directory to the directory you would like to alias.
 
+For json to be able to add paths to your tsconfig.json "paths" has to exist
+under compilerOptions. Else you get an error when running the commands to add
+specific paths. "paths" can be added like this:
+
+  json -f tsconfig.json -I -e "this.compilerOptions['paths'] = {}"
 
 Recommended Aliases
 -------------------
