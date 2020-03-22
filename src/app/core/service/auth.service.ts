@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { of, Observable, throwError } from 'rxjs';
 
-import { User } from '../../data/schema/user';
+import { User } from '@data/schema/user';
 
 interface LoginContextInterface {
   username: string;

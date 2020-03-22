@@ -27,6 +27,9 @@
       ],
       "@modules/*": [
         "app/modules/*"
+      ],
+      "@data/*": [
+        "app/data/*"
       ]
     },
     "lib": [
