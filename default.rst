@@ -48,6 +48,7 @@ These instructions are to install this directory structure to a brand new
   mkdir src/app/modules
   mkdir src/styles && mkdir src/styles/themes
   json --version || npm install -g json
+  json -f tsconfig.json -I -c "this.baseUrl = './src'"
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
   json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['app/core/*']" \
     -e "this.compilerOptions.paths['@shared/*'] = ['app/shared/*']" \
