@@ -18,7 +18,7 @@ exist beneath the ``app`` dir.
 This directory structure moves ``~/src/app`` to ``~/src/module/app`` then
 creates a symlink from ``~/src`` to ``~/src/app`` (not shown and hidden from
 vscode) so ``ng`` will still place new files where they belong.  By moving
-``app`` to a subdirectory of the ``module`` directory  it clears space for
+``app`` to a subdirectory of the ``module`` directory it clears space for
 files which truly belong under the ``app`` module.  This removes the
 requirement of a ``core`` module.
 
