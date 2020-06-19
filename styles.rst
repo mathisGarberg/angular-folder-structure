@@ -17,13 +17,15 @@ directory.
 Themes
 ------
 
-The ``~/src/styles/themes`` directory should contain the application-wide themes. This application
-includes two theme-files, `black-theme.scss` and `light-theme.scss`.
+The ``~/src/styles/themes`` directory should contain the application-wide
+themes. This application includes two theme-files, `black-theme.scss` and
+`light-theme.scss`.
 
-A theme file generates the color-palette that composes the final theme and is constructed of three
-main palettes: primary, accent and warn. These palettes are defined using the `mat-palette` mixin,
-which accepts a mat-color and a hue-number that represents different shades of the chosen color.
-In terms of code, this is what we have:
+A theme file generates the color-palette that composes the final theme and is
+constructed of three main palettes: primary, accent and warn. These palettes
+are defined using the `mat-palette` mixin, which accepts a mat-color and a
+hue-number that represents different shades of the chosen color. In terms of
+code, this is what we have:
 
 .. code-block:: scss
 
@@ -37,8 +39,8 @@ In terms of code, this is what we have:
     $my-black-warn
   );
 
-The themes are included in the `styles.scss` file along with the `mat-core` mixin,
-which adds the base styles to material components. 
+The themes are included in the `styles.scss` file along with the `mat-core`
+mixin, which adds the base styles to material components.
 
 .. code-block:: scss
 
@@ -57,11 +59,13 @@ which adds the base styles to material components.
     @include angular-material-theme($my-dark-theme);
   }
 
-The downside here is that the approach above only will style material components and not custom ones.
+The downside here is that the approach above only will style material
+components and not custom ones.
 
-To achieve this, we've added a file called ``project-container.component.scss-theme.scss``. This file
-imports the material theme and defines a mixin that styles the content with the appropriate color values
-- pulling color-palettes from the theme.
+To achieve this, we've added a file called
+``project-container.component.scss-theme.scss``. This file imports the material
+theme and defines a mixin that styles the content with the appropriate color
+values - pulling color-palettes from the theme.
 
 .. code-block:: scss
 
@@ -102,9 +106,10 @@ Then those files are referred to in the `styles.scss` files:
     @include custom-components-theme($my-black-theme);
   }
 
-The application content needs to be placed inside either a ``mat-sidenav-container`` element
-or have the ``mat-app-background`` class applied to work. This application follows the last 
-approach by appending this class to the ``div`` that wraps the app-content in the 
+The application content needs to be placed inside either a
+``mat-sidenav-container`` element or have the ``mat-app-background`` class
+applied to work. This application follows the last approach by appending this
+class to the ``div`` that wraps the app-content in the
 ``src/app/layout/content-layout/content-layout.component.html`` file:
 
 .. code-block:: html
