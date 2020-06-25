@@ -18,7 +18,7 @@ exist beneath the ``app`` dir.
 This directory structure moves ``~/src/app`` to ``~/src/module/app`` then
 creates a symlink from ``~/src`` to ``~/src/app`` (not shown and hidden from
 vscode) so ``ng`` will still place new files where they belong.  By moving
-``app`` to a subdirectory of the ``module`` directory  it clears space for
+``app`` to a subdirectory of the ``module`` directory it clears space for
 files which truly belong under the ``app`` module.  This removes the
 requirement of a ``core`` module.
 
@@ -65,13 +65,14 @@ These instructions are to install this directory structure to a brand new
   ng generate module module/Shared
   ng generate module module/Data
   json --version || npm install -g json
-  json -f tsconfig.json -I -c "this.baseUrl = './src'"
+  json -f tsconfig.json -I -c "this.baseUrl = './'"
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['module/app/*']" \
-    -e "this.compilerOptions.paths['@shared/*'] = ['module/shared/*']" \
-    -e "this.compilerOptions.paths['@module/*'] = ['module/*']" \
-    -e "this.compilerOptions.paths['@env/*'] = ['environment/*']" \
-    -e "this.compilerOptions.paths['@data/*'] = ['module/data/*']"
+  json -f tsconfig.json -I \
+    -e "this.compilerOptions.paths['@app/*'] = ['src/module/app/*']" \
+    -e "this.compilerOptions.paths['@shared/*'] = ['src/module/shared/*']" \
+    -e "this.compilerOptions.paths['@module/*'] = ['src/module/*']" \
+    -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']" \
+    -e "this.compilerOptions.paths['@data/*'] = ['src/module/data/*']"
   mkdir -p .vscode
   test -f .vscode/settings.json || echo "{}" > .vscode/settings.json
   json -f .vscode/settings.json -I -e "this['files.exclude'] = {'**src/app': true}"
