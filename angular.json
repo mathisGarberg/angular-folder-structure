@@ -11,13 +11,17 @@
       "schematics": {
         "@schematics/angular:component": {
           "changeDetection": "OnPush",
-          "styleext": "scss"
+          "style": "scss"
         }
       },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "rxjs-compat"
+             ],
+            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -85,6 +89,10 @@
                   "baseline": "1mb",
                   "maximumWarning": "1mb",
                   "maximumError": "1.5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -152,7 +160,8 @@
               "src/tsconfig.spec.json"
             ],
             "exclude": [
-              "**/node_modules/**"
+              "**/node_modules/**",
+              "src/app/data/service/json/*"
             ]
           }
         }
@@ -179,7 +188,8 @@
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
             "exclude": [
-              "**/node_modules/**"
+              "**/node_modules/**",
+              "src/app/data/service/json/*"
             ]
           }
         }

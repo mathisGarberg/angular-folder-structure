@@ -1,5 +1,5 @@
 <div class='card-container'>
-  <div class='flippable-card' [ngClass]="{'flipped':flipped}">
+  <div class='flippable-card' [ngClass]="{'flipped': flipped}">
     <mat-card class="custom-card front" *ngIf="!flipped">
       <mat-card-header>
         <div mat-card-avatar class="example-header-image"></div>
@@ -34,7 +34,6 @@
       </mat-card-content>
       <mat-card-actions>
         <button class="active" mat-button (click)='flipped = !flipped'>READ MORE</button>
-        <button class="active" mat-button>SHARE</button>
       </mat-card-actions>
     </mat-card>
   </div>

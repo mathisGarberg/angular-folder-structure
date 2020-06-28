@@ -12,7 +12,6 @@ import { AuthService } from '@app/service/auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
-
   error: string;
   isLoading: boolean;
   loginForm: FormGroup;
@@ -27,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {}
 
-  get f () {
+  get f() {
     return this.loginForm.controls;
   }
 
@@ -36,13 +35,15 @@ export class LoginComponent implements OnInit {
 
     const credentials = this.loginForm.value;
 
-    this.authService.login(credentials)
+    this.authService
+      .login(credentials)
       .pipe(
-        delay(5000),
+        delay(1500),
         tap(user => this.router.navigate(['/dashboard/home'])),
-        finalize(() => this.isLoading = false),
-        catchError(error => of(this.error = error))
-      ).subscribe();
+        finalize(() => (this.isLoading = false)),
+        catchError(error => of((this.error = error)))
+      )
+      .subscribe();
   }
 
   private buildForm(): void {
@@ -51,5 +52,4 @@ export class LoginComponent implements OnInit {
       password: ['', Validators.required]
     });
   }
-
 }
