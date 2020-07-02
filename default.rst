@@ -50,9 +50,10 @@ These instructions are to install this directory structure to a brand new
   json --version || npm install -g json
   json -f tsconfig.json -I -c "this.baseUrl = './'"
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
-  json -f tsconfig.json -I -e "this.compilerOptions.paths['@app/*'] = ['src/app/core/*']" \
+  json -f tsconfig.json -I \
+    -e "this.compilerOptions.paths['@app/*'] = ['src/app/core/*']" \
     -e "this.compilerOptions.paths['@shared/*'] = ['src/app/shared/*']" \
-    -e "this.compilerOptions.paths['@env/*'] = ['src/environment/*']"
+    -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']"
 
 
 .. include:: footer.rst
