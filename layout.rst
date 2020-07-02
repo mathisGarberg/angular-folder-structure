@@ -40,7 +40,7 @@ Routing
 -------
 
 Each module can have its own routing and is often defined in a file separate
-from the ``custom-module.module.ts`` file.  See the ``app`` module's
+from the ``custom.module.ts`` file.  See the ``app`` module's
 ``app-routing.module.ts`` as an example.
 
 Within routing layouts are handled in a rather clever way.  By using child
