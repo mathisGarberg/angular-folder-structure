@@ -2,8 +2,10 @@ Layout Directory
 ================
 
 `~/src/app/layout <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/layout>`_
+
 and/or
-``~/src/custom-module/layout``
+
+``~/modules/custom/layout``
 
 The layout directory contains one or more components which act as a layout or
 are parts of a layout such as a Header, Nav, Footer, etc. and
