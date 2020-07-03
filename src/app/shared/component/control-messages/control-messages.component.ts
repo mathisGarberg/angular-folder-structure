@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { ValidationService } from '../../service/validation.service';
+
+import { ValidationService } from '@core/services/validation.service';
 
 @Component({
   selector: 'app-control-messages',
@@ -8,18 +9,19 @@ import { ValidationService } from '../../service/validation.service';
   styleUrls: ['./control-messages.component.scss']
 })
 export class ControlMessagesComponent {
-  @Input()
-  public control: FormControl;
-  @Input()
-  public labelName?: string;
+  @Input() control: FormControl;
+  @Input() labelName?: string;
 
   get errorMessage(): boolean {
     for (const propertyName in this.control.errors) {
-      if (this.control.errors.hasOwnProperty(propertyName) && this.control.touched) {
+      if (
+        this.control.errors.hasOwnProperty(propertyName) &&
+        this.control.touched
+      ) {
         return ValidationService.getValidationErrorMessage(
           propertyName,
           this.control.errors[propertyName],
-          this.labelName,
+          this.labelName
         );
       }
     }

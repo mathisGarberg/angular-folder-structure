@@ -1,24 +1,6 @@
-.card-container {
+mat-card {
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
   perspective: 800px;
-}
-
-.flippable-card {
-  transform-style: preserve-3d;
-  transition: transform 1s;
-}
-
-.flippable-card mat-card {
-  margin: 0;
-  display: block;
-  backface-visibility: hidden;
-}
-
-.flippable-card .back {
-  background: #23262d;
-  color: #fff;
-  transform: rotateY(180deg);
-}
-
-.flippable-card.flipped {
-  transform: rotateY(180deg);
 }

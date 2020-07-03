@@ -20,7 +20,7 @@
           "options": {
             "allowedCommonJsDependencies": [
               "rxjs-compat"
-             ],
+            ],
             "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
@@ -40,8 +40,13 @@
               }
             ],
             "styles": [
-              { "input": "src/styles.scss" }
+              {
+                "input": "src/styles.scss"
+              }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./src/styles"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -127,6 +132,9 @@
                 "input": "src/main.scss"
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./src/styles"]
+            },
             "scripts": [],
             "assets": [
               {

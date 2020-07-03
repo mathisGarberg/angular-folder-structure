@@ -1,15 +1,7 @@
 <div id="content">
-  <div>
-    <button style="float: right" class="btn btn-primary" (click)="openMyModal()">
-      Open Modal
-    </button>
-
-    <h1>Projects</h1>
+  <div class="masonry">
+    <div *ngFor="let project of projects$ | async">
+      <app-project-item class="masonry-item" [project]="project"></app-project-item>
+    </div>
   </div>
-
-  <ngx-masonry>
-    <div ngxMasonryItem class="masonry-item" *ngFor="let project of projects$ | async">
-      <app-project-item [project]="project"></app-project-item>
-   </div>
-  </ngx-masonry>
 </div>

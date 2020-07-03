@@ -1,0 +1,9 @@
+$afs-dark-primary: mat-palette($mat-grey, 700, 300, 900);
+$afs-dark-accent: mat-palette($mat-blue-grey, 400);
+$afs-dark-warn: mat-palette($mat-red, 500);
+
+$afs-black-theme: mat-dark-theme(
+  $afs-dark-primary,
+  $afs-dark-accent,
+  $afs-dark-warn
+);
