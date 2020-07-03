@@ -1,7 +1,8 @@
 .full-width-image {
   min-height: 100vh;
   width: 100vw;
-  background: url("../../../assets/images/photo-1505765050516-f72dcac9c60e.jpg") no-repeat center center fixed;
+  background: url('../../../assets/images/winter.jpg') no-repeat center center
+    fixed;
   background-size: cover;
 }
 
@@ -24,5 +25,5 @@
 
 .card {
   background-color: rgba(42, 42, 42, 0.8);
-  color: #FFF;
+  color: #fff;
 }

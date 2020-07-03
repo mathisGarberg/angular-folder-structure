@@ -1,29 +1,24 @@
-/*
-===============
-   Flip Card
-===============
-*/
 .card-container {
-    perspective: 800px;
+  perspective: 800px;
 }
 
 .flippable-card {
-    transform-style: preserve-3d;
-    transition: transform 1s;
+  transform-style: preserve-3d;
+  transition: transform 1s;
 }
 
 .flippable-card mat-card {
-    margin: 0;
-    display: block;
-    backface-visibility: hidden;
+  margin: 0;
+  display: block;
+  backface-visibility: hidden;
 }
 
 .flippable-card .back {
-    background: #23262d;
-    color: #FFF;
-    transform: rotateY(180deg);
+  background: #23262d;
+  color: #fff;
+  transform: rotateY(180deg);
 }
 
 .flippable-card.flipped {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }

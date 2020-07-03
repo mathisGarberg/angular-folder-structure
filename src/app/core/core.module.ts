@@ -7,13 +7,8 @@ import { throwIfAlreadyLoaded } from '@app/guard/module-import.guard';
 
 import { TokenInterceptor } from '@app/interceptor/token.interceptor';
 
-import { NgxSpinnerModule } from 'ngx-spinner';
-
 @NgModule({
-  imports: [
-    HttpClientModule,
-    NgxSpinnerModule
-  ],
+  imports: [HttpClientModule],
   providers: [
     AuthGuard,
     NoAuthGuard,

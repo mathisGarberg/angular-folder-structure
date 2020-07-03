@@ -9,5 +9,6 @@ import { Project } from '@data/schema/project';
 })
 export class ProjectItemComponent {
   @Input() project: Project;
+
   flipped = false;
 }

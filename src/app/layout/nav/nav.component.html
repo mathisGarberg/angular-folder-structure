@@ -17,7 +17,9 @@
           <mat-slide-toggle [checked]="isDarkTheme$ | async" (change)="toggleTheme($event.checked)">Toggle Theme</mat-slide-toggle>
         </span>
         <div style="float: right;">
-          <a [href]="repoUrl" target="_blank">Fork on GitHub <fa-icon [icon]="['fab','github']"></fa-icon></a>
+          <a [href]="repoUrl" target="_blank">Fork on GitHub
+            <fa-icon [icon]="['fab','github']"></fa-icon>
+          </a>
         </div>
       </div>
     </mat-toolbar>
