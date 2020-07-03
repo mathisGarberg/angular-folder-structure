@@ -27,7 +27,7 @@ Angular application structure.  Each section is optional
 * shared
 * styles
 
-Each section is optional so please read through the Directory
+Please read through the Directory
 Structure Parts carefully to understand them all.
 
 Directory Tree Structure
