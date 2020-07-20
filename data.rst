@@ -3,16 +3,16 @@ Data Module
 
 `~/src/app/data <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/app/data>`_
 
-The data module is a top level directory and holds the schema (models/entities)
+The data module is a top level directory and holds the types (models/entities)
 and services (repositories) for data consumed by the application.
 
 By default there are two subdirectories::
 
   ~/src/app/data
-    /schema
+    /types
     /service
 
-The schema directory holds the class definition files for data structures.
+The types directory holds the class definition files for data structures.
 An example data structure:
 
 .. code-block:: ts
@@ -24,7 +24,7 @@ An example data structure:
   }
 
 The service directory holds the services for fetching data.
-The service files are not necessarily a 1:1 match with schema files.
+The service files are not necessarily a 1:1 match with types files.
 An example service file:
 
 .. code-block:: ts
@@ -32,7 +32,7 @@ An example service file:
   import { Injectable } from '@angular/core';
   import { Observable } from 'rxjs';
 
-  import { Project } from '../schema/project';
+  import { Project } from '../types/project';
   import { ApiService } from './api.service';
 
   const routes = {
@@ -66,10 +66,10 @@ source.  Do not create multiple modules for each data source::
 
   ~/src/app/data
     /data-source-one
-      /schema
+      /types
       /service
     /data-source-two
-      /schema
+      /types
       /service
     /data.module.ts
 
@@ -77,8 +77,8 @@ source.  Do not create multiple modules for each data source::
 Schema Naming Standard
 ----------------------
 
-A schema file is very much like an entity file in an Object Relational Mapper.
-This schema file is central to your application's consumption of data and
+A type file is very much like an entity file in an Object Relational Mapper.
+This type file is central to your application's consumption of data and
 therefore does not need cursory decorators such as calling it `ProjectSchema`
 or `ProjectModel`.  Schemas are special because they are the only plain-named
 class in the application.

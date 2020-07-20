@@ -39,10 +39,13 @@ Tree Structure
   └── src
       ├── assets
       ├── environments (@env) [@env links to environment file]
-      ├── module
+      ├── module (@module)
       │   ├── app (@app)
+      │   ├── [custom module 1]
       │   │   └── layout
-      │   ├── ... [custom modules]
+      │   ├── [custom module 2]
+      │   │   └── layout
+      │   ├── [more custom modules...]
       │   ├── data (@data)
       │   └── shared (@shared)
       └── styles
@@ -59,7 +62,6 @@ These instructions are to install this directory structure to a brand new
   mkdir src/module
   mkdir src/styles && mkdir src/styles/themes
   mv src/app src/module
-  mkdir src/module/app/layout
   cd src && ln -s . app & cd .
   sed -i .bak 's/.\/app/.\/module\/app/g' src/main.ts
   ng generate module module/Shared
