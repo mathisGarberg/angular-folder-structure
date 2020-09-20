@@ -56,7 +56,7 @@ Install
 -------
 
 These instructions are to install this directory structure to a brand new
-``ng`` created application::
+``ng`` **version 9 or below**  created application::
 
   mkdir media
   mkdir src/module
@@ -66,7 +66,7 @@ These instructions are to install this directory structure to a brand new
   sed -i .bak 's/.\/app/.\/module\/app/g' src/main.ts
   ng generate module module/Shared
   ng generate module module/Data
-  json --version || npm install -g json
+  json --version || sudo npm install -g json
   json -f tsconfig.json -I -c "this.baseUrl = './'"
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
   json -f tsconfig.json -I \
@@ -79,5 +79,31 @@ These instructions are to install this directory structure to a brand new
   test -f .vscode/settings.json || echo "{}" > .vscode/settings.json
   json -f .vscode/settings.json -I -e "this['files.exclude'] = {'**src/app': true}"
 
+These instructions are to install this directory structure to a brand new
+``ng`` **version 10 or above**  created application.  Before you can execute
+these instructions you must remove the comments from the ``tsconfig.base.json``
+file because comments in a json file are not valid json::
+
+  mkdir media
+  mkdir src/module
+  mkdir src/styles && mkdir src/styles/themes
+  mv src/app src/module
+  mkdir src/module/app/layout
+  cd src && ln -s . app & cd .
+  sed -i .bak 's/.\/app/.\/module\/app/g' src/main.ts
+  ng generate module module/Shared
+  ng generate module module/Data
+  json --version || sudo npm install -g json
+  json -f tsconfig.base.json -I -c "this.baseUrl = './'"
+  json -f tsconfig.base.json -I -c "this.compilerOptions.paths = {}"
+  json -f tsconfig.base.json -I \
+    -e "this.compilerOptions.paths['@app/*'] = ['src/module/app/*']" \
+    -e "this.compilerOptions.paths['@shared/*'] = ['src/module/shared/*']" \
+    -e "this.compilerOptions.paths['@module/*'] = ['src/module/*']" \
+    -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']" \
+    -e "this.compilerOptions.paths['@data/*'] = ['src/module/data/*']"
+  mkdir -p .vscode
+  test -f .vscode/settings.json || echo "{}" > .vscode/settings.json
+  json -f .vscode/settings.json -I -e "this['files.exclude'] = {'**src/app': true}"
 
 .. include:: footer.rst

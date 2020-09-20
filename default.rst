@@ -38,7 +38,7 @@ Install
 -------
 
 These instructions are to install this directory structure to a brand new
-``ng`` created application::
+``ng`` **version 9 or below** created application::
 
   mkdir media
   ng generate module Core
@@ -47,7 +47,7 @@ These instructions are to install this directory structure to a brand new
   mkdir src/app/layout
   mkdir src/app/modules
   mkdir src/styles && mkdir src/styles/themes
-  json --version || npm install -g json
+  json --version || sudo npm install -g json
   json -f tsconfig.json -I -c "this.baseUrl = './'"
   json -f tsconfig.json -I -c "this.compilerOptions.paths = {}"
   json -f tsconfig.json -I \
@@ -55,5 +55,25 @@ These instructions are to install this directory structure to a brand new
     -e "this.compilerOptions.paths['@shared/*'] = ['src/app/shared/*']" \
     -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']"
 
+
+These instructions are to install this directory structure to a brand new
+``ng`` **version 10 or above** created application.  Before you can execute
+these instructions you must remove the comments from the ``tsconfig.base.json``
+file because comments in a json file are not valid json::
+
+  mkdir media
+  ng generate module Core
+  ng generate module Shared
+  ng generate module Data
+  mkdir src/app/layout
+  mkdir src/app/modules
+  mkdir src/styles && mkdir src/styles/themes
+  json --version || sudo npm install -g json
+  json -f tsconfig.base.json -I -c "this.baseUrl = './'"
+  json -f tsconfig.base.json -I -c "this.compilerOptions.paths = {}"
+  json -f tsconfig.base.json -I \
+    -e "this.compilerOptions.paths['@app/*'] = ['src/app/core/*']" \
+    -e "this.compilerOptions.paths['@shared/*'] = ['src/app/shared/*']" \
+    -e "this.compilerOptions.paths['@env'] = ['src/environments/environment']"
 
 .. include:: footer.rst
