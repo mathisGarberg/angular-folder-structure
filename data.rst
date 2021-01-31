@@ -9,10 +9,10 @@ and services (repositories) for data consumed by the application.
 By default there are two subdirectories::
 
   ~/src/app/data
-    /types
+    /schema
     /service
 
-The types directory holds the class definition files for data structures.
+The schema directory holds the class definition files for data structures.
 An example data structure:
 
 .. code-block:: ts
@@ -32,7 +32,7 @@ An example service file:
   import { Injectable } from '@angular/core';
   import { Observable } from 'rxjs';
 
-  import { Project } from '../types/project';
+  import { Project } from '../schema/project';
   import { ApiService } from './api.service';
 
   const routes = {
@@ -66,10 +66,10 @@ source.  Do not create multiple modules for each data source::
 
   ~/src/app/data
     /data-source-one
-      /types
+      /schema
       /service
     /data-source-two
-      /types
+      /schema
       /service
     /data.module.ts
 
@@ -77,8 +77,8 @@ source.  Do not create multiple modules for each data source::
 Schema Naming Standard
 ----------------------
 
-A type file is very much like an entity file in an Object Relational Mapper.
-This type file is central to your application's consumption of data and
+A schema file is very much like an entity file in an Object Relational Mapper.
+This schema file is central to your application's consumption of data and
 therefore does not need cursory decorators such as calling it `ProjectSchema`
 or `ProjectModel`.  Schemas are special because they are the only plain-named
 class in the application.
