@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AuthLayoutComponent } from './layout/auth-layout/auth-layout.component';
 import { ContentLayoutComponent } from './layout/content-layout/content-layout.component';
-import { NoAuthGuard } from '@app/guard/no-auth.guard';
+import { NoAuthGuard } from '@core/guard/no-auth.guard';
 
 const routes: Routes = [
   {

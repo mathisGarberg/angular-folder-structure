@@ -1,17 +1,20 @@
-@import 'styles-variables';
-
 @import '~bootstrap/scss/bootstrap';
-@import 'style-reset';
 
 @import '~@angular/material/theming';
 
+$custom-typography: mat-typography-config(
+  $font-family: 'Open-sans, Arial, sans-serif'
+);
+
+@import './styles/styles-variables';
+@import './styles/style-reset';
+@import './styles/styles-reset.scss-theme';
+
 @include mat-core();
 
-@import './styles/themes/black-theme.scss';
-@import './styles/themes/light-theme.scss';
+@import './themes/black-theme.scss';
+@import './themes/light-theme.scss';
 
-// import custom component themes here
-@import 'styles-reset.scss-theme';
 @import 'app/modules/home/page/project-item/project-container.component.scss-theme.scss';
 
 @mixin custom-components-theme($theme) {
@@ -19,12 +22,12 @@
   @include my-project-container-component-theme($theme);
 }
 
-.my-light-theme {
-  @include angular-material-theme($my-light-theme);
-  @include custom-components-theme($my-light-theme);
+.afs-light-theme {
+  @include angular-material-theme($afs-light-theme);
+  @include custom-components-theme($afs-light-theme);
 }
 
-.my-dark-theme {
-  @include angular-material-theme($my-black-theme);
-  @include custom-components-theme($my-black-theme);
+.afs-dark-theme {
+  @include angular-material-theme($afs-black-theme);
+  @include custom-components-theme($afs-black-theme);
 }
