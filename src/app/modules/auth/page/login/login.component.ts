@@ -4,7 +4,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { tap, delay, finalize, catchError } from 'rxjs/operators';
 import { of } from 'rxjs';
 
-import { AuthService } from '@app/service/auth.service';
+import { AuthService } from '@core/service/auth.service';
 
 @Component({
   selector: 'app-login',

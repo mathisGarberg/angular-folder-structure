@@ -1,11 +1,11 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AuthGuard } from '@app/guard/auth.guard';
-import { NoAuthGuard } from '@app/guard/no-auth.guard';
-import { throwIfAlreadyLoaded } from '@app/guard/module-import.guard';
+import { AuthGuard } from './guard/auth.guard';
+import { NoAuthGuard } from './guard/no-auth.guard';
+import { throwIfAlreadyLoaded } from './guard/module-import.guard';
 
-import { TokenInterceptor } from '@app/interceptor/token.interceptor';
+import { TokenInterceptor } from './interceptor/token.interceptor';
 
 @NgModule({
   imports: [HttpClientModule],

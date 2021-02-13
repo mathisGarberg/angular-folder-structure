@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./src",
-    "module": "es2020",
+    "module": "esnext",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -17,6 +17,9 @@
     ],
     "paths": {
       "@app/*": [
+        "app/*"
+      ],
+      "@core/*": [
         "app/core/*"
       ],
       "@shared/*": [

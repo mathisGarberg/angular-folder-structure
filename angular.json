@@ -18,9 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "rxjs-compat"
-            ],
+            "allowedCommonJsDependencies": ["rxjs-compat"],
             "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
@@ -45,6 +43,9 @@
                 "inject": true
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./src/styles"]
+            },
             "scripts": []
           },
           "configurations": {
@@ -130,6 +131,9 @@
                 "inject": true
               }
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["./src/styles"]
+            },
             "scripts": [],
             "assets": [
               {
@@ -158,14 +162,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "src/app/data/service/json/*"
-            ]
+            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "src/app/data/service/json/*"]
           }
         }
       }
@@ -190,10 +188,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**",
-              "src/app/data/service/json/*"
-            ]
+            "exclude": ["**/node_modules/**", "src/app/data/service/json/*"]
           }
         }
       }

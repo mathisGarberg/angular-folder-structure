@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { ThemeService } from '@app/service/theme.service';
-import { tap } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
+
+import { themes } from '@core/constants/themes';
+import { ThemeService } from '@core/service/theme.service';
 
 @Component({
   selector: 'app-content-layout',
@@ -9,36 +11,39 @@ import { tap } from 'rxjs/operators';
   styleUrls: ['./content-layout.component.scss']
 })
 export class ContentLayoutComponent implements OnInit {
-  public theme = 'my-light-theme';
+  currentTheme: string;
 
-  overlayContainer: OverlayContainer;
+  private overlayContainer: OverlayContainer;
+
+  currentActiveTheme$ = this.themeService.getDarkTheme().pipe(
+    map((isDarkTheme: boolean) => {
+      const [lightTheme, darkTheme] = themes;
+
+      this.currentTheme = isDarkTheme ? lightTheme.name : darkTheme.name;
+
+      if (this.overlayContainer) {
+        const overlayContainerClasses = this.overlayContainer.getContainerElement()
+          .classList;
+        const themeClassesToRemove = Array.from(
+          overlayContainerClasses
+        ).filter((item: string) => item.includes('-theme'));
+        if (themeClassesToRemove.length) {
+          overlayContainerClasses.remove(...themeClassesToRemove);
+        }
+        overlayContainerClasses.add(this.currentTheme);
+      }
+
+      return this.currentTheme;
+    })
+  );
 
   constructor(private themeService: ThemeService) {}
 
   ngOnInit(): void {
     if (this.overlayContainer) {
-      this.overlayContainer.getContainerElement().classList.add(this.theme);
+      this.overlayContainer
+        .getContainerElement()
+        .classList.add(this.currentTheme);
     }
-
-    this.themeService
-      .getDarkTheme()
-      .pipe(
-        tap((isDarkTheme: boolean) => {
-          this.theme = isDarkTheme ? 'my-dark-theme' : 'my-light-theme';
-
-          if (this.overlayContainer) {
-            const overlayContainerClasses = this.overlayContainer.getContainerElement()
-              .classList;
-            const themeClassesToRemove = Array.from(
-              overlayContainerClasses
-            ).filter((item: string) => item.includes('-theme'));
-            if (themeClassesToRemove.length) {
-              overlayContainerClasses.remove(...themeClassesToRemove);
-            }
-            overlayContainerClasses.add(this.theme);
-          }
-        })
-      )
-      .subscribe();
   }
 }
