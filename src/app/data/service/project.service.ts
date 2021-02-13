@@ -8,15 +8,13 @@ import { JsonApiService } from './json-api.service';
   providedIn: 'root'
 })
 export class ProjectService {
-  constructor (
-    private jsonApiService: JsonApiService
-  ) {}
+  constructor(private jsonApiService: JsonApiService) {}
 
   getAll(): Observable<Array<Project>> {
     return this.jsonApiService.get('/projects');
   }
 
   getSingle(id: number): Observable<Project> {
-    return this.jsonApiService.get('/projects/' + id);
+    return this.jsonApiService.get(`/projects/${id}`);
   }
 }

@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { tap, delay, finalize, catchError } from 'rxjs/operators';
-import { of } from 'rxjs';
+import { of, Subscription } from 'rxjs';
 
 import { AuthService } from '@core/service/auth.service';
 
@@ -11,10 +11,12 @@ import { AuthService } from '@core/service/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent implements OnInit, OnDestroy {
   error: string;
   isLoading: boolean;
   loginForm: FormGroup;
+
+  private sub = new Subscription();
 
   constructor(
     private formBuilder: FormBuilder,
@@ -35,11 +37,11 @@ export class LoginComponent implements OnInit {
 
     const credentials = this.loginForm.value;
 
-    this.authService
+    this.sub = this.authService
       .login(credentials)
       .pipe(
         delay(1500),
-        tap(user => this.router.navigate(['/dashboard/home'])),
+        tap(() => this.router.navigate(['/dashboard/home'])),
         finalize(() => (this.isLoading = false)),
         catchError(error => of((this.error = error)))
       )
@@ -51,5 +53,9 @@ export class LoginComponent implements OnInit {
       username: ['', Validators.required],
       password: ['', Validators.required]
     });
+  }
+
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
   }
 }

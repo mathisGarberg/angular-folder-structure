@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
@@ -11,7 +11,7 @@ import { MyModalComponent } from '../modal/my-modal.component';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
   projects$: Observable<Project[]> = this.projectService.getAll();
 
   constructor(
@@ -19,13 +19,16 @@ export class HomeComponent implements OnInit {
     private projectService: ProjectService
   ) {}
 
-  ngOnInit(): void {}
-
   openMyModal() {
     const modalRef = this.modalService.open(MyModalComponent);
     modalRef.componentInstance.id = 1;
-    modalRef.result.then(result => {
-      console.log(result);
-    });
+    modalRef.result.then(
+      result => {
+        console.log(result);
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 }
