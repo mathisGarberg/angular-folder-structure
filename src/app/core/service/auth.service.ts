@@ -22,11 +22,12 @@ export class AuthService {
   token: string;
 
   login(loginContext: LoginContextInterface): Observable<User> {
-    if (
+    const isDefaultUser =
       loginContext.username === defaultUser.username &&
-      loginContext.password === defaultUser.password
-    ) {
-        return of(defaultUser);
+      loginContext.password === defaultUser.password;
+
+    if (isDefaultUser) {
+      return of(defaultUser);
     }
 
     return throwError('Invalid username or password');
@@ -34,9 +35,5 @@ export class AuthService {
 
   logout(): Observable<boolean> {
     return of(false);
-  }
-
-  getToken() {
-    return this.getToken;
   }
 }
