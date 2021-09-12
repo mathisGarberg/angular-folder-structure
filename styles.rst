@@ -9,7 +9,7 @@ other styles.
 
 `~/src/styles.scss <https://github.com/mathisGarberg/angular-folder-structure/tree/master/src/styles.scss>`_
 is installed in the default Angular skeleton.  It should
-contain **@import** statments for all your global application scss files.
+contain **@import** statements for all your global application scss files.
 For instance it can import theme files stored in the ``~/src/styles``
 directory.
 
