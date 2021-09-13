@@ -8,4 +8,4 @@ const routes: Routes = [
   }
 ];
 
-export const ContactRoutes = RouterModule.forChild(routes);
+export const contactRoutes = RouterModule.forChild(routes);

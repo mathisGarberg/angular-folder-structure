@@ -48,14 +48,14 @@ export class LoginComponent implements OnInit, OnDestroy {
       .subscribe();
   }
 
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
+  }
+
   private buildForm(): void {
     this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
     });
-  }
-
-  ngOnDestroy(): void {
-    this.sub.unsubscribe();
   }
 }
