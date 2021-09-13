@@ -1,3 +1,4 @@
+@use '~@angular/material' as mat;
 @import '~@angular/material/theming';
 
 @mixin my-styles-reset-theme($theme) {
@@ -6,15 +7,15 @@
   $foreground: map-get($theme, foreground);
 
   a {
-    color: mat-color($foreground, text);
+    color: mat.get-color-from-palette($foreground, text);
 
     &:hover {
-      color: mat-color($accent);
+      color: mat.get-color-from-palette($accent);
     }
   }
 
   code {
-    color: mat-color($accent, lighter-contrast);
-    background-color: mat-color($accent, lighter);
+    color: mat.get-color-from-palette($accent, lighter-contrast);
+    background-color: mat.get-color-from-palette($accent, lighter);
   }
 }
