@@ -13,8 +13,6 @@ import { ThemeService } from '@core/service/theme.service';
 export class ContentLayoutComponent implements OnInit {
   currentTheme: string;
 
-  private overlayContainer: OverlayContainer;
-
   currentActiveTheme$ = this.themeService.getDarkTheme().pipe(
     map((isDarkTheme: boolean) => {
       const [lightTheme, darkTheme] = themes;
@@ -36,6 +34,8 @@ export class ContentLayoutComponent implements OnInit {
       return this.currentTheme;
     })
   );
+
+  private overlayContainer: OverlayContainer;
 
   constructor(private themeService: ThemeService) {}
 
