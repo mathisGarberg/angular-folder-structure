@@ -55,6 +55,7 @@
     "@ng-bootstrap/ng-bootstrap": "12.1.2",
     "@testing-library/angular": "^10.11.0",
     "@testing-library/dom": "^5.6.1",
+    "autoprefixer": "10.4.5",
     "bootstrap": "^4.6.0",
     "browser-detect": "^0.2.28",
     "core-js": "^2.6.12",
