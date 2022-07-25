@@ -18,7 +18,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": ["rxjs-compat", "ngx-masonry"],
+            "allowedCommonJsDependencies": [
+              "rxjs-compat",
+              "ngx-masonry"
+            ],
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -43,7 +46,9 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["./src/styles"]
+              "includePaths": [
+                "./src/styles"
+              ]
             },
             "scripts": [],
             "vendorChunk": true,
@@ -137,7 +142,9 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["./src/styles"]
+              "includePaths": [
+                "./src/styles"
+              ]
             },
             "scripts": [],
             "assets": [
@@ -167,7 +174,10 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
           }
         }
       }
