@@ -41,8 +41,6 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-
-    NgbModule,
     FontAwesomeModule
   ],
   declarations: [ControlMessagesComponent, SpinnerComponent],
@@ -51,11 +49,8 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
     FormsModule,
     ReactiveFormsModule,
     RouterModule,
-
     MaterialModule,
-
     FontAwesomeModule,
-
     ControlMessagesComponent,
     SpinnerComponent
   ]
