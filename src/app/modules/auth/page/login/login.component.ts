@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { tap, delay, finalize, catchError } from 'rxjs/operators';
 import { of, Subscription } from 'rxjs';
 
@@ -14,12 +14,12 @@ import { AuthService } from '@core/service/auth.service';
 export class LoginComponent implements OnInit, OnDestroy {
   error: string;
   isLoading: boolean;
-  loginForm: FormGroup;
+  loginForm: UntypedFormGroup;
 
   private sub = new Subscription();
 
   constructor(
-    private formBuilder: FormBuilder,
+    private formBuilder: UntypedFormBuilder,
     private router: Router,
     private authService: AuthService
   ) {
