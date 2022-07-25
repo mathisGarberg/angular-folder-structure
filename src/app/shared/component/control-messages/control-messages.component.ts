@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { UntypedFormControl } from '@angular/forms';
+import { UntypedFormControl, AbstractControl } from '@angular/forms';
 import { ValidationService } from '../../service/validation.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { ValidationService } from '../../service/validation.service';
   styleUrls: ['./control-messages.component.scss']
 })
 export class ControlMessagesComponent {
-  @Input() control: UntypedFormControl;
+  @Input() control: UntypedFormControl | AbstractControl;
   @Input() labelName?: string;
 
   get errorMessage(): boolean {

@@ -1,6 +1,10 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
+import {
+  UntypedFormGroup,
+  UntypedFormBuilder,
+  UntypedFormControl
+} from '@angular/forms';
 import { tap, delay, finalize, catchError } from 'rxjs/operators';
 import { of, Subscription } from 'rxjs';
 
@@ -11,7 +15,7 @@ import { AuthService } from '@core/service/auth.service';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss']
 })
-export class LoginComponent implements OnInit, OnDestroy {
+export class LoginComponent implements OnDestroy {
   error: string;
   isLoading: boolean;
   loginForm: UntypedFormGroup;
@@ -25,8 +29,6 @@ export class LoginComponent implements OnInit, OnDestroy {
   ) {
     this.buildForm();
   }
-
-  ngOnInit() {}
 
   get f() {
     return this.loginForm.controls;
@@ -53,9 +55,9 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   private buildForm(): void {
-    this.loginForm = this.formBuilder.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required]
+    this.loginForm = new UntypedFormGroup({
+      username: new UntypedFormControl(''),
+      password: new UntypedFormControl('')
     });
   }
 }
