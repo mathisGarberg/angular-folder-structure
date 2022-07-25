@@ -5,8 +5,6 @@ import { RouterModule } from '@angular/router';
 
 import { MaterialModule } from './material.module';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import {
   FontAwesomeModule,
   FaIconLibrary
@@ -56,7 +54,6 @@ import { SpinnerComponent } from './component/spinner/spinner.component';
 
     MaterialModule,
 
-    NgbModule,
     FontAwesomeModule,
 
     ControlMessagesComponent,
