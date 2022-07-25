@@ -18,9 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [
-              "rxjs-compat"
-            ],
+            "allowedCommonJsDependencies": ["rxjs-compat", "ngx-masonry"],
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -45,9 +43,7 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "./src/styles"
-              ]
+              "includePaths": ["./src/styles"]
             },
             "scripts": [],
             "vendorChunk": true,
@@ -141,9 +137,7 @@
               }
             ],
             "stylePreprocessorOptions": {
-              "includePaths": [
-                "./src/styles"
-              ]
+              "includePaths": ["./src/styles"]
             },
             "scripts": [],
             "assets": [
@@ -173,10 +167,7 @@
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": [
-              "src/**/*.ts",
-              "src/**/*.html"
-            ]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
           }
         }
       }
@@ -195,16 +186,6 @@
             "production": {
               "devServerTarget": "angular-folder-structure:serve:production"
             }
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**",
-              "src/app/data/service/json/*"
-            ]
           }
         }
       }

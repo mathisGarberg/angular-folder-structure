@@ -1,5 +1,5 @@
-@use '~@angular/material' as mat;
-@import '~@angular/material/theming';
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
 
 @mixin my-styles-reset-theme($theme) {
   $primary: map-get($theme, primary);

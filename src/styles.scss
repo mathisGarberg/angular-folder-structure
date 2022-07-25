@@ -1,7 +1,7 @@
-@use '~@angular/material' as mat;
+@use '@angular/material' as mat;
 @import '~bootstrap/scss/bootstrap';
 
-@import '~@angular/material/theming';
+@import '@angular/material/theming';
 
 $custom-typography: mat.define-typography-config(
   $font-family: 'Open-sans, Arial, sans-serif'
