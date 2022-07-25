@@ -10,15 +10,14 @@ import { ProjectDetailsComponent } from './page/project-details/project-details.
 import { HomeRoutingModule } from './home.routing';
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    MyModalComponent,
-    ProjectItemComponent,
-    ProjectDetailsComponent
-  ],
-  imports: [SharedModule, NgxMasonryModule, HomeRoutingModule],
-  exports: [],
-  providers: [],
-  entryComponents: [MyModalComponent]
+    declarations: [
+        HomeComponent,
+        MyModalComponent,
+        ProjectItemComponent,
+        ProjectDetailsComponent
+    ],
+    imports: [SharedModule, NgxMasonryModule, HomeRoutingModule],
+    exports: [],
+    providers: []
 })
 export class HomeModule {}
