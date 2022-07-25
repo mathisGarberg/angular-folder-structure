@@ -1,5 +1,5 @@
-@use '~@angular/material' as mat;
-@import '~@angular/material/theming';
+@use '@angular/material' as mat;
+@import '@angular/material/theming';
 
 @mixin my-project-container-component-theme($theme) {
   $accent: map-get($theme, accent);
